@@ -45,17 +45,17 @@
 	GitHub Repository: https://github.com/pointbiz/bitaddress.org
 	-->
 
-	<title>Simple Ledger Protocol (SLP) Paper Wallet | Team BitCHSLaP</title>
+	<title>Simple Ledger Protocol (SLP) Paper Wallet | PSF</title>
 
   <link rel="icon" type="image/png" href="img/favicon.png">
 
   <!-- Open Graph tags for Facebook Shares -->
-  <meta property="og:title" content="SLP Paper Wallet | Team BitCHSLaP" />
+  <meta property="og:title" content="SLP Paper Wallet | PSF" />
   <meta property="og:description" content="Create a Simpleledger paper wallet for offline storage and payments" />
   <meta property="og:image" content="https://wallet.bitchslap.tech/img/card_default.png" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@BTCTN">
+  <meta name="twitter:site" content="@PSF_DAO">
   <meta name="twitter:title" content="Simpleledger Paper Wallet">
   <meta name="twitter:description" content="Create a Simpleledger Protocol (SLP) paper wallet for offline storage and payments">
   <meta name="twitter:image" content="https://wallet.bitchslap.tech/img/card_default.png">
@@ -7183,16 +7183,17 @@ and entering your simpleledger address.</p>
 					</div>
 					<div class="style-row">
 						<div onmouseover="toggleSelectedDesign(this)" onclick="toggleSelectedDesign(this)" class="style-col sc-left">
-							<div onclick="designConfirmed(this)" data-wallet-skin="default" class="confirm-design confirm-design-white">
+							<div onclick="designConfirmed(this)" data-wallet-skin="inksaver" class="confirm-design">
 								Select and Continue
 							</div>
 							<div class="style-label">
 								SLP-paperwallet default
 							</div>
 							<div class="style-example">
-								<img src="img/bitcoin-com-paper-wallet-template.png">
+								<img src="img/paper-wallet-ink-saver.png">
 							</div>
 						</div>
+
 						<div onmouseover="toggleSelectedDesign(this)" onclick="toggleSelectedDesign(this)" class="style-col sc-right">
 							<div onclick="designConfirmed(this)" data-wallet-skin="inksaver" class="confirm-design">
 								Select and Continue
@@ -7200,11 +7201,13 @@ and entering your simpleledger address.</p>
 							<div class="style-label">
 							Light
 						</div>
+
 						<div class="style-example">
 							<img src="img/paper-wallet-ink-saver.png">
 						</div>
 						</div>
 					</div>
+					<!--
 					<div class="style-row">
 						<div onmouseover="toggleSelectedDesign(this)" onclick="toggleSelectedDesign(this)" class="style-col sc-left">
 							<div onclick="designConfirmed(this)" data-wallet-skin="nostep" class="confirm-design">
@@ -7253,6 +7256,7 @@ and entering your simpleledger address.</p>
               </div>
             </div>
 					</div>
+				-->
 				</div>
 
 				<div id="paperarea">
@@ -7266,13 +7270,13 @@ and entering your simpleledger address.</p>
 						<span style="display:none;"><label id="paperlabelhideart" for="paperart">Hide Art?</label> <input type="checkbox" id="paperart" onchange="ninja.wallets.paperwallet.toggleArt(this);" /></span>
 						<span style="display:none;"><label id="chooseyourwallet" for="paperIMG">Style:</label>
 							<select id="walletSelector" name="paperIMG">
-						    <option value="default">SLP paperwallet</option>
+						    <!-- <option value="default">SLP paperwallet</option> -->
 						    <option value="inksaver">Ink Saver</option>
-						    <option value="windex">BCH Gang</option>
+						    <!-- <option value="windex">BCH Gang</option>
 						    <option value="coloringbook">DIY</option>
 						    <option value="nostep">No Step</option>
 						    <option value="dorian">"Satoshi"</option>
-						    <option value="vietnam">Vietnam</option>
+						    <option value="vietnam">Vietnam</option> -->
   						</select>
   					</span>
   					<span><label id="denomLabel">Custom Token Amount?</label>
@@ -7288,7 +7292,9 @@ and entering your simpleledger address.</p>
   						</select>
   					</span>
 						<span><label id="paperlabeladdressestogenerate" for="paperlimit">Addresses to generate:</label> <input onchange="ninja.wallets.paperwallet.build(document.getElementById('paperlimit').value * 1, document.getElementById('paperlimitperpage').value * 1, !document.getElementById('paperart').checked, document.getElementById('paperpassphrase').value);" type="text" id="paperlimit" /></span>
+						<!--
 						<span><button id="advancedcommandbtn" onclick="toggleAdvanced()">Advanced Settings</button></span>
+						-->
 
 						<script>
 							function toggleAdvanced() {
@@ -10664,7 +10670,8 @@ ninja.wallets.paperwallet = {
 					address = slpjs.Utils.toSlpAddress(address);
 
           // Remove "bitcoincash:" prefix
-          address = address.slice(13);
+          // address = address.slice(13);
+					console.log(`ping 1`)
           // END CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
 
 					ninja.wallets.paperwallet.showArtisticWallet(idPostFix, address, encryptedKey);
@@ -10679,7 +10686,8 @@ ninja.wallets.paperwallet = {
 					address = slpjs.Utils.toSlpAddress(address);
 
           // Remove "bitcoincash:" prefix
-          address = address.slice(13)
+          // address = address.slice(13)
+					console.log(`ping 2`)
           // END CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
 
 					ninja.wallets.paperwallet.showWallet(idPostFix, address, encryptedKey);
@@ -10701,7 +10709,8 @@ ninja.wallets.paperwallet = {
 				bitcoinAddress = slpjs.Utils.toSlpAddress(bitcoinAddress);
 
         // Remove "bitcoincash:" prefix
-        bitcoinAddress = bitcoinAddress.slice(13);
+        // bitcoinAddress = bitcoinAddress.slice(13);
+				console.log(`ping 3`)
         // END CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
 
 				ninja.wallets.paperwallet.showArtisticWallet(idPostFix, bitcoinAddress, privateKeyWif);
@@ -10716,7 +10725,8 @@ ninja.wallets.paperwallet = {
 				bitcoinAddress = slpjs.Utils.toSlpAddress(bitcoinAddress);
 
         // Remove "bitcoincash:" prefix
-        bitcoinAddress = bitcoinAddress.slice(13);
+        // bitcoinAddress = bitcoinAddress.slice(13);
+				console.log(`ping 4`)
         // END CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
 
 				ninja.wallets.paperwallet.showWallet(idPostFix, bitcoinAddress, privateKeyWif);
@@ -12813,11 +12823,21 @@ if (ninja.getQueryString()["showseedpool"] == "true" || ninja.getQueryString()["
 
 <br><br><br>
 <hr size=1>
-      <font size=2><font color="green">Proudly created by <strong><a href="https://www.bitchslap.tech/">Team BitCHSLaP</a></strong> for the inaugural <strong><a href="https://slp.dev/">2019 SLP Virtual Hackathon</a></strong><br>utilizing open source code from slpjs, paperwallet.bitcoin.com and bitaddress.org V3.3.0<br>
-JavaScript copyrights included in source.</font></font>
-
-
-
+	      <font size=2><font color="green">
+					These paper wallets are recommended for storing <a href="https://psfoundation.cash" target="_blank">
+					PSF tokens</a>. Tokens can be sent and retrieved with <a href="https://badger.bitcoin.com" target="_blank">
+					Badger Mobile Wallet</a>.
+					<br><br>
+					This wallet is forked from the following projects:
+					<ul>
+						<li>
+							<a href="https://paperwallet.bitcoin.com" target="_blank">paperwallet.bitcoin.com</a>
+						</li>
+						<li>
+							<a href="https://www.bitchslap.tech/" target="_blank">SLP Paper Wallet by team BitCHSLaP</a>
+						</li>
+					</ul>
+				</font></font>
       </div>
     </div>
   </div>
