@@ -6,10 +6,10 @@
 
 	Notice of Copyrights and Licenses:
 	***********************************
-	The bitaddress.org project, software and embedded resources are copyright bitaddress.org (pointbiz). 
+	The bitaddress.org project, software and embedded resources are copyright bitaddress.org (pointbiz).
 	The bitaddress.org name and logo are not part of the open source license.
 
-	Portions of the all-in-one HTML document contain JavaScript codes that are the copyrights of others. 
+	Portions of the all-in-one HTML document contain JavaScript codes that are the copyrights of others.
 	The individual copyrights are included throughout the document along with their licenses.
 	Included JavaScript libraries are separated with HTML script tags.
 
@@ -27,28 +27,28 @@
 	The bitaddress.org software is available under The MIT License (MIT)
 	Copyright (c) 2011-2016 bitaddress.org (pointbiz)
 
-	Permission is hereby granted, free of charge, to any person obtaining a copy of this software and 
-	associated documentation files (the "Software"), to deal in the Software without restriction, including 
-	without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
-	sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject 
+	Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+	associated documentation files (the "Software"), to deal in the Software without restriction, including
+	without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+	sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject
 	to the following conditions:
 
-	The above copyright notice and this permission notice shall be included in all copies or substantial 
+	The above copyright notice and this permission notice shall be included in all copies or substantial
 	portions of the Software.
 
-	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT 
-	LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
-	IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
-	WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+	LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+	IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+	WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 	GitHub Repository: https://github.com/pointbiz/bitaddress.org
 	-->
 
 	<title>Simple Ledger Protocol (SLP) Paper Wallet | Team BitCHSLaP</title>
-     
+
   <link rel="icon" type="image/png" href="img/favicon.png">
-  
+
   <!-- Open Graph tags for Facebook Shares -->
   <meta property="og:title" content="SLP Paper Wallet | Team BitCHSLaP" />
   <meta property="og:description" content="Create a Simpleledger paper wallet for offline storage and payments" />
@@ -59,7 +59,7 @@
   <meta name="twitter:title" content="Simpleledger Paper Wallet">
   <meta name="twitter:description" content="Create a Simpleledger Protocol (SLP) paper wallet for offline storage and payments">
   <meta name="twitter:image" content="https://wallet.bitchslap.tech/img/card_default.png">
-  
+
   <meta name="description" content="Create a simpleledger paper wallet for offline storage and payments" />
   <meta name="keywords" content="bitcoin, paper wallet, bitcoin paper wallet, bitcoin cash, bitcoin cash paperwallet, SLP, simpleledger, simpleledger protocol, SLP paperwallet, Simpleledger paper wallet, SLP tokens" />
 
@@ -214,7 +214,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 		};
 
 	})();
-}	
+}
 	</script>
 	<script type="text/javascript">
 /*!
@@ -351,7 +351,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 
 	SHA256._digestsize = 32;
 
-})();	
+})();
 	</script>
 	<script type="text/javascript">
 /*!
@@ -407,7 +407,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 
 	};
 
-})(); 
+})();
 	</script>
 	<script type="text/javascript">
 /*!
@@ -559,7 +559,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 			// Allow mode to override options
 			if (mode.fixOptions) mode.fixOptions(options);
 
-			var 
+			var
 
 			// Convert to bytes if message is a string
 		m = (
@@ -600,7 +600,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 			// Allow mode to override options
 			if (mode.fixOptions) mode.fixOptions(options);
 
-			var 
+			var
 
 			// Convert to bytes if ciphertext is a string
 		c = (
@@ -1042,9 +1042,9 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 
 	/**
 	* Electronic Code Book mode.
-	* 
+	*
 	* ECB applies the cipher directly against each block of the input.
-	* 
+	*
 	* ECB does not require an initialization vector.
 	*/
 	var ECB = C_mode.ECB = function () {
@@ -1079,7 +1079,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 
 	/**
 	* Cipher block chaining
-	* 
+	*
 	* The first block is XORed with the IV. Subsequent blocks are XOR with the
 	* previous cipher output.
 	*/
@@ -1133,11 +1133,11 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 
 	/**
 	* Cipher feed back
-	* 
+	*
 	* The cipher output is XORed with the plain text to produce the cipher output,
 	* which is then fed back into the cipher to produce a bit pattern to XOR the
 	* next block with.
-	* 
+	*
 	* This is a stream cipher mode and does not require padding.
 	*/
 	var CFB = C_mode.CFB = function () {
@@ -1185,10 +1185,10 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 
 	/**
 	* Output feed back
-	* 
+	*
 	* The cipher repeatedly encrypts its own output. The output is XORed with the
 	* plain text to produce the cipher text.
-	* 
+	*
 	* This is a stream cipher mode and does not require padding.
 	*/
 	var OFB = C_mode.OFB = function () {
@@ -1444,11 +1444,11 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 	<script type="text/javascript">
 /*!
 * Random number generator with ArcFour PRNG
-* 
+*
 * NOTE: For best results, put code like
 * <body onclick='SecureRandom.seedTime();' onkeypress='SecureRandom.seedTime();'>
 * in your main HTML document.
-* 
+*
 * Copyright Tom Wu, bitaddress.org  BSD License.
 * http://www-cs-students.stanford.edu/~tjw/jsbn/LICENSE
 */
@@ -1635,7 +1635,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 * Basic Javascript Elliptic Curve implementation
 * Ported loosely from BouncyCastle's Java EC code
 * Only Fp curves implemented for now
-* 
+*
 * Copyright Tom Wu, bitaddress.org  BSD License.
 * http://www-cs-students.stanford.edu/~tjw/jsbn/LICENSE
 */
@@ -1696,7 +1696,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 	/**
 	* return a sqrt root - the routine verifies that the calculation
 	* returns the right value - if none exists it returns null.
-	* 
+	*
 	* Copyright (c) 2000 - 2011 The Legion Of The Bouncy Castle (http://www.bouncycastle.org)
 	* Ported to JavaScript by bitaddress.org
 	*/
@@ -1985,7 +1985,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 		var len = 32; // integerToBytes will zero pad if integer is less than 32 bytes. 32 bytes length is required by the Bitcoin protocol.
 		var enc = ec.integerToBytes(x, len);
 
-		// when compressed prepend byte depending if y point is even or odd 
+		// when compressed prepend byte depending if y point is even or odd
 		if (compressed) {
 			if (y.isEven()) {
 				enc.unshift(0x02);
@@ -2308,15 +2308,15 @@ var defaults = {
 	radix: 16, // work with HEX by default
 	minBits: 3,
 	maxBits: 20, // this permits 1,048,575 shares, though going this high is NOT recommended in JS!
-	
+
 	bytesPerChar: 2,
 	maxBytesPerChar: 6, // Math.pow(256,7) > Math.pow(2,53)
-		
+
 	// Primitive polynomials (in decimal form) for Galois Fields GF(2^n), for 2 <= n <= 30
 	// The index of each term in the array corresponds to the n for that polynomial
 	// i.e. to get the polynomial for n=16, use primitivePolynomials[16]
 	primitivePolynomials: [null,null,1,3,3,5,3,3,29,17,9,5,83,27,43,3,45,9,39,39,9,5,3,33,27,9,71,39,9,5,83],
-	
+
 	// warning for insecure PRNG
 	warning: 'WARNING:\nA secure random number generator was not found.\nUsing Math.random(), which is NOT cryptographically strong!'
 };
@@ -2336,13 +2336,13 @@ function init(bits){
 	if(bits && (typeof bits !== 'number' || bits%1 !== 0 || bits<defaults.minBits || bits>defaults.maxBits)){
 		throw new Error('Number of bits must be an integer between ' + defaults.minBits + ' and ' + defaults.maxBits + ', inclusive.')
 	}
-	
+
 	config.radix = defaults.radix;
 	config.bits = bits || defaults.bits;
 	config.size = Math.pow(2, config.bits);
 	config.max = config.size - 1;
-	
-	// Construct the exp and log tables for multiplication.	
+
+	// Construct the exp and log tables for multiplication.
 	var logs = [], exps = [], x = 1, primitive = defaults.primitivePolynomials[config.bits];
 	for(var i=0; i<config.size; i++){
 		exps[i] = x;
@@ -2353,7 +2353,7 @@ function init(bits){
 			x &= config.max;
 		}
 	}
-		
+
 	config.logs = logs;
 	config.exps = exps;
 };
@@ -2372,7 +2372,7 @@ function isInited(){
 // which should output a random string of 1's and 0's of length `bits`
 function getRNG(){
 	var randomBits, crypto;
-	
+
 	function construct(bits, arr, radix, size){
 		var str = '',
 			i = 0,
@@ -2388,20 +2388,20 @@ function getRNG(){
 			return str;
 		}
 	}
-	
+
 	// node.js crypto.randomBytes()
 	if(typeof require === 'function' && (crypto=require('crypto')) && (randomBits=crypto['randomBytes'])){
 		return function(bits){
 			var bytes = Math.ceil(bits/8),
 				str = null;
-		
+
 			while( str === null ){
 				str = construct(bits, randomBits(bytes).toString('hex'), 16, 4);
 			}
 			return str;
 		}
 	}
-	
+
 	// browsers with window.crypto.getRandomValues()
 	if(global['crypto'] && typeof global['crypto']['getRandomValues'] === 'function' && typeof global['Uint32Array'] === 'function'){
 		crypto = global['crypto'];
@@ -2414,8 +2414,8 @@ function getRNG(){
 				crypto['getRandomValues'](arr);
 				str = construct(bits, arr, 10, 32);
 			}
-			
-			return str;	
+
+			return str;
 		}
 	}
 
@@ -2423,7 +2423,7 @@ function getRNG(){
 	// Will produce a warning every time it is called.
 	config.unsafePRNG = true;
 	warn();
-	
+
 	var bitsPerNum = 32;
 	var max = Math.pow(2,bitsPerNum)-1;
 	return function(bits){
@@ -2431,7 +2431,7 @@ function getRNG(){
 		var arr = [], str=null;
 		while(str===null){
 			for(var i=0; i<elems; i++){
-				arr[i] = Math.floor(Math.random() * max + 1); 
+				arr[i] = Math.floor(Math.random() * max + 1);
 			}
 			str = construct(bits, arr, 10, bitsPerNum);
 		}
@@ -2456,7 +2456,7 @@ exports.setRNG = function(rng, alert){
 	}
 	config.unsafePRNG=false;
 	rng = rng || getRNG();
-	
+
 	// test the RNG (5 times)
 	if(typeof rng !== 'function' || typeof rng(config.bits) !== 'string' || !parseInt(rng(config.bits),2) || rng(config.bits).length > config.bits || rng(config.bits).length < config.bits){
 		throw new Error("Random number generator is invalid. Supply an RNG of the form function(bits){} that returns a string containing 'bits' number of random 1's and 0's.")
@@ -2464,12 +2464,12 @@ exports.setRNG = function(rng, alert){
 		config.rng = rng;
 	}
 	config.alert = !!alert;
-	
+
 	return !!config.unsafePRNG;
 };
 
 function isSetRNG(){
-	return typeof config.rng === 'function'; 
+	return typeof config.rng === 'function';
 };
 
 // Generates a random bits-length number string using the PRNG
@@ -2478,20 +2478,20 @@ exports.random = function(bits){
 	if(!isSetRNG()){
 		this.setRNG();
 	}
-	
+
 	if(typeof bits !== 'number' || bits%1 !== 0 || bits < 2){
 		throw new Error('Number of bits must be an integer greater than 1.')
 	}
-	
+
 	if(config.unsafePRNG){
 		warn();
 	}
 	return bin2hex(config.rng(bits));
 }
 
-// Divides a `secret` number String str expressed in radix `inputRadix` (optional, default 16) 
-// into `numShares` shares, each expressed in radix `outputRadix` (optional, default to `inputRadix`), 
-// requiring `threshold` number of shares to reconstruct the secret. 
+// Divides a `secret` number String str expressed in radix `inputRadix` (optional, default 16)
+// into `numShares` shares, each expressed in radix `outputRadix` (optional, default to `inputRadix`),
+// requiring `threshold` number of shares to reconstruct the secret.
 // Optionally, zero-pads the secret to a length that is a multiple of padLength before sharing.
 /** @expose **/
 exports.share = function(secret, numShares, threshold, padLength, withoutPrefix){
@@ -2501,9 +2501,9 @@ exports.share = function(secret, numShares, threshold, padLength, withoutPrefix)
 	if(!isSetRNG()){
 		this.setRNG();
 	}
-	
+
 	padLength =  padLength || 0;
-		
+
 	if(typeof secret !== 'string'){
 		throw new Error('Secret must be a string.');
 	}
@@ -2512,7 +2512,7 @@ exports.share = function(secret, numShares, threshold, padLength, withoutPrefix)
 	}
 	if(numShares > config.max){
 		var neededBits = Math.ceil(Math.log(numShares +1)/Math.LN2);
-		throw new Error('Number of shares must be an integer between 2 and 2^bits-1 (' + config.max + '), inclusive. To create ' + numShares + ' shares, use at least ' + neededBits + ' bits.')	
+		throw new Error('Number of shares must be an integer between 2 and 2^bits-1 (' + config.max + '), inclusive. To create ' + numShares + ' shares, use at least ' + neededBits + ' bits.')
 	}
 	if(typeof threshold !== 'number' || threshold%1 !== 0 || threshold < 2){
 		throw new Error('Threshold number of shares must be an integer between 2 and 2^bits-1 (' + config.max + '), inclusive.');
@@ -2524,13 +2524,13 @@ exports.share = function(secret, numShares, threshold, padLength, withoutPrefix)
 	if(typeof padLength !== 'number' || padLength%1 !== 0 ){
 		throw new Error('Zero-pad length must be an integer greater than 1.');
 	}
-	
+
 	if(config.unsafePRNG){
 		warn();
 	}
-	
+
 	secret = '1' + hex2bin(secret); // append a 1 so that we can preserve the correct number of leading zeros in our secret
-	secret = split(secret, padLength);	
+	secret = split(secret, padLength);
 	var x = new Array(numShares), y = new Array(numShares);
 	for(var i=0, len = secret.length; i<len; i++){
 		var subShares = this._getShares(secret[i], numShares, threshold);
@@ -2549,19 +2549,19 @@ exports.share = function(secret, numShares, threshold, padLength, withoutPrefix)
 			x[i] = config.bits.toString(36).toUpperCase() + padLeft(x[i],padding) + bin2hex(y[i]);
 		}
 	}
-	
+
 	return x;
 };
 
-// This is the basic polynomial generation and evaluation function 
+// This is the basic polynomial generation and evaluation function
 // for a `config.bits`-length secret (NOT an arbitrary length)
-// Note: no error-checking at this stage! If `secrets` is NOT 
+// Note: no error-checking at this stage! If `secrets` is NOT
 // a NUMBER less than 2^bits-1, the output will be incorrect!
 /** @expose **/
-exports._getShares = function(secret, numShares, threshold){	
+exports._getShares = function(secret, numShares, threshold){
 	var shares = [];
-	var coeffs = [secret]; 
-		
+	var coeffs = [secret];
+
 	for(var i=1; i<threshold; i++){
 		coeffs[i] = parseInt(config.rng(config.bits),2);
 	}
@@ -2573,16 +2573,16 @@ exports._getShares = function(secret, numShares, threshold){
 	}
 	return shares;
 };
-	
+
 // Polynomial evaluation at `x` using Horner's Method
 // TODO: this can possibly be sped up using other methods
-// NOTE: fx=fx * x + coeff[i] ->  exp(log(fx) + log(x)) + coeff[i], 
+// NOTE: fx=fx * x + coeff[i] ->  exp(log(fx) + log(x)) + coeff[i],
 //       so if fx===0, just set fx to coeff[i] because
 //       using the exp/log form will result in incorrect value
 function horner(x, coeffs){
 	var logx = config.logs[x];
 	var fx = 0;
-	for(var i=coeffs.length-1; i>=0; i--){	
+	for(var i=coeffs.length-1; i>=0; i--){
 		if(fx === 0){
 			fx = coeffs[i];
 			continue;
@@ -2602,15 +2602,15 @@ function inArray(arr,val){
 };
 
 function processShare(share){
-	
+
 	var bits = parseInt(share[0], 36);
 	if(bits && (typeof bits !== 'number' || bits%1 !== 0 || bits<defaults.minBits || bits>defaults.maxBits)){
 		throw new Error('Number of bits must be an integer between ' + defaults.minBits + ' and ' + defaults.maxBits + ', inclusive.')
 	}
-	
+
 	var max = Math.pow(2, bits) - 1;
 	var idLength = max.toString(config.radix).length;
-	
+
 	var id = parseInt(share.substr(1, idLength), config.radix);
 	if(typeof id !== 'number' || id%1 !== 0 || id<1 || id>max){
 		throw new Error('Share id must be an integer between 1 and ' + config.max + ', inclusive.');
@@ -2632,11 +2632,11 @@ exports._processShare = processShare;
 // Protected method that evaluates the Lagrange interpolation
 // polynomial at x=`at` for individual config.bits-length
 // segments of each share in the `shares` Array.
-// Each share is expressed in base `inputRadix`. The output 
+// Each share is expressed in base `inputRadix`. The output
 // is expressed in base `outputRadix'
 function combine(at, shares){
-	var setBits, share, x = [], y = [], result = '', idx;	
-	
+	var setBits, share, x = [], y = [], result = '', idx;
+
 	for(var i=0, len = shares.length; i<len; i++){
 		share = processShare(shares[i]);
 		if(typeof setBits === 'undefined'){
@@ -2644,15 +2644,15 @@ function combine(at, shares){
 		}else if(share['bits'] !== setBits){
 			throw new Error('Mismatched shares: Different bit settings.')
 		}
-		
+
 		if(config.bits !== setBits){
 			init(setBits);
 		}
-		
+
 		if(inArray(x, share['id'])){ // repeated x value?
 			continue;
 		}
-	
+
 		idx = x.push(share['id']) - 1;
 		share = split(hex2bin(share['value']));
 		for(var j=0, len2 = share.length; j<len2; j++){
@@ -2660,7 +2660,7 @@ function combine(at, shares){
 			y[j][idx] = share[j];
 		}
 	}
-	
+
 	for(var i=0, len=y.length; i<len; i++){
 		result = padLeft(lagrange(at, x, y[i]).toString(2)) + result;
 	}
@@ -2684,12 +2684,12 @@ exports.combine = function(shares){
 /** @expose **/
 exports.newShare = function(id, shares){
 	if(typeof id === 'string'){
-		id = parseInt(id, config.radix);	
+		id = parseInt(id, config.radix);
 	}
-	
+
 	var share = processShare(shares[0]);
 	var max = Math.pow(2, share['bits']) - 1;
-	
+
 	if(typeof id !== 'number' || id%1 !== 0 || id<1 || id>max){
 		throw new Error('Share id must be an integer between 1 and ' + config.max + ', inclusive.');
 	}
@@ -2697,30 +2697,30 @@ exports.newShare = function(id, shares){
 	var padding = max.toString(config.radix).length;
 	return config.bits.toString(36).toUpperCase() + padLeft(id.toString(config.radix), padding) + combine(id, shares);
 };
-	
+
 // Evaluate the Lagrange interpolation polynomial at x = `at`
 // using x and y Arrays that are of the same length, with
 // corresponding elements constituting points on the polynomial.
 function lagrange(at, x, y){
 	var sum = 0,
-		product, 
+		product,
 		i, j;
-		
+
 	for(var i=0, len = x.length; i<len; i++){
 		if(!y[i]){
-			continue; 
+			continue;
 		}
-			
+
 		product = config.logs[y[i]];
 		for(var j=0; j<len; j++){
 			if(i === j){ continue; }
 			if(at === x[j]){ // happens when computing a share that is in the list of shares used to compute it
 				product = -1; // fix for a zero product term, after which the sum should be sum^0 = sum, not sum^1
-				break; 
+				break;
 			}
 			product = ( product + config.logs[at ^ x[j]] - config.logs[x[i] ^ x[j]] + config.max/* to make sure it's not negative */ ) % config.max;
 		}
-			
+
 		sum = product === -1 ? sum : sum ^ config.exps[product]; // though exps[-1]= undefined and undefined ^ anything = anything in chrome, this behavior may not hold everywhere, so do the check
 	}
 	return sum;
@@ -2729,10 +2729,10 @@ function lagrange(at, x, y){
 /** @expose **/
 exports._lagrange = lagrange;
 
-// Splits a number string `bits`-length segments, after first 
+// Splits a number string `bits`-length segments, after first
 // optionally zero-padding it to a length that is a multiple of `padLength.
 // Returns array of integers (each less than 2^bits-1), with each element
-// representing a `bits`-length segment of the input string from right to left, 
+// representing a `bits`-length segment of the input string from right to left,
 // i.e. parts[0] represents the right-most `bits`-length segment of the input string.
 function split(str, padLength){
 	if(padLength){
@@ -2741,11 +2741,11 @@ function split(str, padLength){
 	var parts = [];
 	for(var i=str.length; i>config.bits; i-=config.bits){
 		parts.push(parseInt(str.slice(i-config.bits, i), 2));
-	}	
-	parts.push(parseInt(str.slice(0, i), 2));	
+	}
+	parts.push(parseInt(str.slice(0, i), 2));
 	return parts;
 };
-	
+
 // Pads a string `str` with zeros on the left so that its length is a multiple of `bits`
 function padLeft(str, bits){
 	bits = bits || config.bits
@@ -2777,9 +2777,9 @@ function bin2hex(str){
 	}
 	return hex;
 }
-	
-// Converts a given UTF16 character string to the HEX representation. 
-// Each character of the input string is represented by 
+
+// Converts a given UTF16 character string to the HEX representation.
+// Each character of the input string is represented by
 // `bytesPerChar` bytes in the output string.
 /** @expose **/
 exports.str2hex = function(str, bytesPerChar){
@@ -2787,11 +2787,11 @@ exports.str2hex = function(str, bytesPerChar){
 		throw new Error('Input must be a character string.');
 	}
 	bytesPerChar = bytesPerChar || defaults.bytesPerChar;
-	
+
 	if(typeof bytesPerChar !== 'number' || bytesPerChar%1 !== 0 || bytesPerChar<1 || bytesPerChar > defaults.maxBytesPerChar){
 		throw new Error('Bytes per character must be an integer between 1 and ' + defaults.maxBytesPerChar + ', inclusive.')
 	}
-	
+
 	var hexChars = 2*bytesPerChar;
 	var max = Math.pow(16, hexChars) - 1;
 	var out = '', num;
@@ -2808,19 +2808,19 @@ exports.str2hex = function(str, bytesPerChar){
 	}
 	return out;
 };
-	
-// Converts a given HEX number string to a UTF16 character string. 
+
+// Converts a given HEX number string to a UTF16 character string.
 /** @expose **/
 exports.hex2str = function(str, bytesPerChar){
 	if(typeof str !== 'string'){
 		throw new Error('Input must be a hexadecimal string.');
 	}
 	bytesPerChar = bytesPerChar || defaults.bytesPerChar;
-	
+
 	if(typeof bytesPerChar !== 'number' || bytesPerChar%1 !== 0 || bytesPerChar<1 || bytesPerChar > defaults.maxBytesPerChar){
 		throw new Error('Bytes per character must be an integer between 1 and ' + defaults.maxBytesPerChar + ', inclusive.')
 	}
-	
+
 	var hexChars = 2*bytesPerChar;
 	var out = '';
 	str = padLeft(str, hexChars);
@@ -2829,7 +2829,7 @@ exports.hex2str = function(str, bytesPerChar){
 	}
 	return out;
 };
-	
+
 // by default, initialize without an RNG
 exports.init();
 })(typeof module !== 'undefined' && module['exports'] ? module['exports'] : (window['secrets'] = {}), typeof GLOBAL !== 'undefined' ? GLOBAL : window );
@@ -2841,7 +2841,7 @@ exports.init();
 // Review and Testing: https://github.com/cryptocoinjs/bigi/
 /*!
 * Basic JavaScript BN library - subset useful for RSA encryption. v1.4
-* 
+*
 * Copyright (c) 2005  Tom Wu
 * All Rights Reserved.
 * BSD License
@@ -4126,7 +4126,7 @@ exports.init();
 // Licensed under the MIT license:
 //   http://www.opensource.org/licenses/mit-license.php
 //
-// The word "QR Code" is registered trademark of 
+// The word "QR Code" is registered trademark of
 // DENSO WAVE INCORPORATED
 //   http://www.denso-wave.com/qrcode/faqpatent-e.html
 //
@@ -4340,7 +4340,7 @@ exports.init();
 			var data = (this.errorCorrectLevel << 3) | maskPattern;
 			var bits = QRCode.Util.getBCHTypeInfo(data);
 
-			// vertical		
+			// vertical
 			for (var i = 0; i < 15; i++) {
 
 				var mod = (!test && ((bits >> i) & 1) == 1);
@@ -5023,7 +5023,7 @@ exports.init();
 	[2, 35, 17],
 	[2, 35, 13],
 
-	// 4		
+	// 4
 	[1, 100, 80],
 	[2, 50, 32],
 	[2, 50, 24],
@@ -5041,7 +5041,7 @@ exports.init();
 	[4, 43, 19],
 	[4, 43, 15],
 
-	// 7		
+	// 7
 	[2, 98, 78],
 	[4, 49, 31],
 	[2, 32, 14, 4, 33, 15],
@@ -5059,7 +5059,7 @@ exports.init();
 	[4, 36, 16, 4, 37, 17],
 	[4, 36, 12, 4, 37, 13],
 
-	// 10		
+	// 10
 	[2, 86, 68, 2, 87, 69],
 	[4, 69, 43, 1, 70, 44],
 	[6, 43, 19, 2, 44, 20],
@@ -5438,7 +5438,7 @@ Bitcoin.ECDSA = (function () {
 		* Parses a byte array containing a DER-encoded signature.
 		*
 		* This function will return an object of the form:
-		* 
+		*
 		* {
 		*   r: BigInteger,
 		*   s: BigInteger
@@ -5817,7 +5817,7 @@ Bitcoin.ECKey = (function () {
 		return this;
 	};
 
-	// Sipa Private Key Wallet Import Format 
+	// Sipa Private Key Wallet Import Format
 	ECKey.prototype.getBitcoinWalletImportFormat = function () {
 		var bytes = this.getBitcoinPrivateKeyByteArray();
 		if (bytes == null) return "";
@@ -5829,12 +5829,12 @@ Bitcoin.ECKey = (function () {
 		return privWif;
 	};
 
-	// Private Key Hex Format 
+	// Private Key Hex Format
 	ECKey.prototype.getBitcoinHexFormat = function () {
 		return Crypto.util.bytesToHex(this.getBitcoinPrivateKeyByteArray()).toString().toUpperCase();
 	};
 
-	// Private Key Base64 Format 
+	// Private Key Base64 Format
 	ECKey.prototype.getBitcoinBase64Format = function () {
 		return Crypto.util.bytesToBase64(this.getBitcoinPrivateKeyByteArray());
 	};
@@ -5843,7 +5843,7 @@ Bitcoin.ECKey = (function () {
 		if (this.priv == null) return null;
 		// Get a copy of private key as a byte array
 		var bytes = this.priv.toByteArrayUnsigned();
-		// zero pad if private key is less than 32 bytes 
+		// zero pad if private key is less than 32 bytes
 		while (bytes.length < 32) bytes.unshift(0x00);
 		return bytes;
 	};
@@ -6079,17 +6079,17 @@ Bitcoin.Util = {
 	<script type="text/javascript">
 /*
 * Copyright (c) 2010-2011 Intalio Pte, All Rights Reserved
-* 
+*
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
 * in the Software without restriction, including without limitation the rights
 * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 * copies of the Software, and to permit persons to whom the Software is
 * furnished to do so, subject to the following conditions:
-* 
+*
 * The above copyright notice and this permission notice shall be included in
 * all copies or substantial portions of the Software.
-* 
+*
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -6109,7 +6109,7 @@ Bitcoin.Util = {
 	* N = Cpu cost
 	* r = Memory cost
 	* p = parallelization cost
-	* 
+	*
 	*/
 	window.Crypto_scrypt = function (passwd, salt, N, r, p, dkLen, callback) {
 		if (N == 0 || (N & (N - 1)) != 0) throw Error("N must be > 0 and a power of 2");
@@ -6433,13 +6433,13 @@ body, html { height: 99%; margin:0;}
 .button { margin-left: 5px; margin-right: 5px; }
 input[type=checkbox] { position: relative; z-index: 20; }
 
-#progress-bar-border {  
+#progress-bar-border {
   margin: 15px 0px;
   border-radius: 5px;
   background-color: #eeeeee;
 }
-#progress-bar {  
-  font-size: 20px;    
+#progress-bar {
+  font-size: 20px;
   width: 0%;
   background-color: #0fcb97;
   color: #000000;
@@ -6460,7 +6460,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 #keyarea .label { text-decoration: none; }
 #keyarea .privwif { float: none; text-align: right; position: relative; padding: 0; }
 #keyarea .qrcode_public { float: none; display: block; padding: 13px 11px 11px 11px; }
-#keyarea .qrcode_private { float: none; display: block; top: 0; text-align: right; padding: 13px 11px 11px 11px; 
+#keyarea .qrcode_private { float: none; display: block; top: 0; text-align: right; padding: 13px 11px 11px 11px;
 	/* Watermark as background image */
 
   background-repeat: no-repeat;
@@ -6472,7 +6472,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 #singlearea { font-size: 90%; }
 #singlesecret { position: relative; top: -130px; float: right; right: 200px; color: red; font-weight: bolder; font-size: 200%;  }
 #singleshare { position: relative; top: -110px; float: left; left: 160px; color: #0fcb97; font-weight: bolder; font-size: 200%;  }
-#singlesafety { text-align: left; padding: 5px; position: relative; 
+#singlesafety { text-align: left; padding: 5px; position: relative;
 	border-top: 1px solid #a6a6a6a6;
 	border-bottom: 1px solid #a6a6a6a6;
   margin-top: 12px;
@@ -6480,29 +6480,29 @@ input[type=checkbox] { position: relative; z-index: 20; }
 
 #main { position: relative; text-align: center; margin: 0px auto; width: 808px; }
 #logo { width: 578px; height: 80px; }
-		
+
 #paperarea { min-height: 120px; display: none; }
 #paperarea .keyarea { border: 2px solid #0fcb97; border-top: 0; }
 #paperarea .keyarea.art { display: block; height: auto; border: 0; font-family: Ubuntu, Arial; padding: 0; margin: 0; }
 #paperarea .artwallet .papersvg { width: 781px; border: 0; margin: 0; padding: 12px; left: 0; }
-#paperarea .artwallet .qrcode_public { top: 100px; left: 668px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF; 
-		                                padding: 5px 5px 2px 5px; } 
-#paperarea .artwallet .qrcode_private { top: 95px; left: 17px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF; 
-		                                padding: 5px 5px 2px 5px; 
+#paperarea .artwallet .qrcode_public { top: 100px; left: 668px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF;
+		                                padding: 5px 5px 2px 5px; }
+#paperarea .artwallet .qrcode_private { top: 95px; left: 17px; z-index: 100; margin: 0; float: none; display: block; position: absolute; background-color: #FFFFFF;
+		                                padding: 5px 5px 2px 5px;
     -webkit-transform-origin:top left; -webkit-transform:rotate(-45deg);
 		-moz-transform-origin:top left;    -moz-transform:rotate(-45deg);
 		-ms-transform-origin:top left;     -ms-transform:rotate(-45deg);
 		-o-transform-origin:top left;      -o-transform:rotate(-45deg);
 		transform-origin:top left;         transform:rotate(-45deg);}
-#paperarea .artwallet .btcaddress  
+#paperarea .artwallet .btcaddress
 {
 	position: absolute; top: 32px; left: 400px; z-index: 100; font-size: 16px; background-color: transparent;
-	font-weight:bold; color: #ffffff; margin: 0;	
-} 
-#paperarea .artwallet .btcprivwif  
+	font-weight:bold; color: #ffffff; margin: 0;
+}
+#paperarea .artwallet .btcprivwif
 {
 	position: absolute; top: 261px; left: 11px; z-index: 100; font-size: 10px; background-color: transparent;
-	font-weight:bold; color: #ffffff; margin: 0;  
+	font-weight:bold; color: #ffffff; margin: 0;
 		-webkit-transform-origin:top left; -webkit-transform:rotate(-45deg);
 		-moz-transform-origin:top left;    -moz-transform:rotate(-45deg);
 		-ms-transform-origin:top left;     -ms-transform:rotate(-45deg);
@@ -6512,7 +6512,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 #paperarea .artwallet .btcencryptedkey
 {
 	position: absolute; top: 266px; left: 8px; z-index: 100; font-size: 10px; background-color: transparent;
-	font-weight:bold; color: #ffffff; margin: 0;  
+	font-weight:bold; color: #ffffff; margin: 0;
 		-webkit-transform-origin:top left; -webkit-transform:rotate(-45deg);
 		-moz-transform-origin:top left;    -moz-transform:rotate(-45deg);
 		-ms-transform-origin:top left;     -ms-transform:rotate(-45deg);
@@ -6529,10 +6529,10 @@ input[type=checkbox] { position: relative; z-index: 20; }
 #detailarea .notes { text-align: left; font-size: 80%; padding: 0 0 20px 0; }
 #detailarea .pubqr .item .label { text-decoration: none; }
 #detailarea .pubqr .item { float: left; margin: 10px 0; position: relative; }
-#detailarea .pubqr .item.right { float: right; position: relative; top: 0; } 
+#detailarea .pubqr .item.right { float: right; position: relative; top: 0; }
 #detailarea .privqr .item .label { text-decoration: none; }
 #detailarea .privqr .item { float: left; margin: 0; position: relative; }
-#detailarea .privqr .item.right { float: right; position: relative; } 
+#detailarea .privqr .item.right { float: right; position: relative; }
 #detailarea .item { margin: 10px 0; position: relative; font-size: 90%; padding: 1px 0; }
 #detailarea .item.clear { clear: both; padding-top: 10px; }
 #detailarea .label { display: block; font-weight: bold; }
@@ -6576,8 +6576,8 @@ input[type=checkbox] { position: relative; z-index: 20; }
 .hide { display: none; }
 .show { display: block; }
 .invisible {visibility:hidden;}
-		
-@media screen 	
+
+@media screen
 {
   /*Lock and Denomination CSS*/
   .paper-wallet {
@@ -6591,7 +6591,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
   .lock-ctn {
     position: absolute;
     top: 424px;
-    left: 271px;    
+    left: 271px;
     width: 120px;
     height: 103px;
 
@@ -6633,7 +6633,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
     width: 100%;
     bottom: 0px;
     white-space: nowrap;
-  }  
+  }
   /* End Lock and Denomination CSS */
 
   /* Tooltip CSS */
@@ -6682,16 +6682,16 @@ input[type=checkbox] { position: relative; z-index: 20; }
 
 
 	#tagline { margin: 0 0 15px 0; font-style: italic; }
-	.menu  
+	.menu
 	{
 	    text-align: left; margin: 0; padding: 0; display: block;
 	    background-color: #0fcb97; /* # 009900 # 53c100 */
 	    border-top-left-radius: 5px; border-top-right-radius: 5px;
 	}
-	.menu .tab 
+	.menu .tab
 	{
 	    position: relative; display: inline-block; border: 0px solid red;
-	    margin: 0; list-style: none; z-index: 110; cursor: pointer; 
+	    margin: 0; list-style: none; z-index: 110; cursor: pointer;
 	    top: 1px; padding: 10px 20px; width: 162px; text-align: center;
 	}
 	#singlePrintTop {
@@ -6702,23 +6702,23 @@ input[type=checkbox] { position: relative; z-index: 20; }
 		margin:3px 10px;
 		display: none;
 	}
-	.menu .tab.selected  
+	.menu .tab.selected
 	{
-	    cursor: default; 
-	    background-color: #FFF; margin: 6px 16px; padding: 4px; border-radius: 5px; 
+	    cursor: default;
+	    background-color: #FFF; margin: 6px 16px; padding: 4px; border-radius: 5px;
 	}
-	.menu .tab:hover  
+	.menu .tab:hover
 	{
-	    background-color: #FFF; margin: 6px 16px; padding: 4px; border-radius: 5px; 
+	    background-color: #FFF; margin: 6px 16px; padding: 4px; border-radius: 5px;
 	}
 	.menu .tab.selected:hover { color: #000; }
-	
+
     .pagebreak { height: 50px; }
 
   #paperpassphrase {
   	width:320px;
   	margin-right:8px;
-  }  
+  }
   #paperadvancedcommands {
   	text-align:left;
   	border:2px solid #0fcb97;
@@ -6731,7 +6731,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
   	border-radius: 5px;
 		background-color: #ffffff;
 		border: 2px solid #666666;
-		color: #666666;		
+		color: #666666;
 		margin-top: 0px;
 		line-height:20px;
 		padding: 4px;
@@ -6743,19 +6743,19 @@ input[type=checkbox] { position: relative; z-index: 20; }
   }
 
 	.commands { padding: 10px 15px 5px 15px; margin-bottom: 0; height: 35px;}
-  #newaddress, #papergenerate { 
-    display: none; 	
+  #newaddress, #papergenerate {
+    display: none;
   	font-size:18px;
   	border-radius: 5px;
 		background-color: #ffffff;
 		border: 2px solid #666666;
-		color: #666666;		
+		color: #666666;
 		margin-top: 0px;
 		line-height:20px;
 		padding: 4px;
 		width: 100%;
   }
-  #newaddress:hover, #papergenerate:hover {  	
+  #newaddress:hover, #papergenerate:hover {
   	cursor:pointer;
 		background-color: #666666;
 		color: #ffffff;
@@ -6766,10 +6766,10 @@ input[type=checkbox] { position: relative; z-index: 20; }
   	line-height:200%;
   }
   .generate-button {
-  	display:inline-block;  	
+  	display:inline-block;
   }
 
-	.commands .row { padding: 0 0; text-align: left; } 
+	.commands .row { padding: 0 0; text-align: left; }
 	.commands .row.extra { padding-top: 6px; }
 	.commands span { padding: 0 5px; }
 	.commands span.print { float: right; position: relative; z-index: 20; }
@@ -6796,9 +6796,9 @@ input[type=checkbox] { position: relative; z-index: 20; }
 	#detailcommands .button { position: relative; z-index: 20; }
 	#detailbip38encryptspan { display: none; }
 	.paper .commands { border: 2px solid #0fcb97; }
-	#bulkstartindex, #paperlimit, #paperlimitperpage { width: 35px; } 
+	#bulkstartindex, #paperlimit, #paperlimitperpage { width: 35px; }
 	#bulklimit { width: 45px; }
-			
+
 	.footer { font-size: 90%; clear: both; width: 770px; padding: 10px 0 10px 0; margin: 12px auto auto auto; }
 	.footer div span.item { padding: 10px; }
 	.footer .authorbtc { float: left; width: 470px; }
@@ -6817,7 +6817,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 }
 @media print
 {
-  
+
 	#main { width: auto; }
 	#singlearea { border: 0; }
 	#singlesafety { display: none; }
@@ -6881,7 +6881,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
   .lock-ctn {
     position: absolute;
     top: 424px;
-    left: 271px;    
+    left: 271px;
     width: 120px;
     height: 103px;
 
@@ -6911,7 +6911,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 </head>
 <body onclick="SecureRandom.seedTime();" onmousemove="ninja.seeder.seed(event);">
 
-	
+
 
 	<header id="paperHeader">
 		<h1>
@@ -6949,15 +6949,15 @@ input[type=checkbox] { position: relative; z-index: 20; }
 		<ul class="menu" id="menu" style="display:none;">
 			<li class="tab invisible" style="display:none;" id="paperwallet" onclick="ninja.tab.select(this);">Paper Wallet
 			<li class="tab invisible" id="singlewallet" style="display:none;" onclick="ninja.tab.select(this);">Single Wallet
-			
+
 			<li class="tab" id="bulkwallet" style="display:none;" onclick="ninja.tab.select(this);">Bulk Wallet
 			<li class="tab" id="brainwallet" style="display:none;" onclick="ninja.tab.select(this);">Brain Wallet
 			<li class="tab" id="vanitywallet" style="display:none;" onclick="ninja.tab.select(this);">Vanity Wallet
 			<li class="tab" id="splitwallet" style="display:none;" onclick="ninja.tab.select(this);">Split Wallet
 			<li class="tab" id="detailwallet" style="display:none;" onclick="ninja.tab.select(this);">Wallet Details
-			<li class="tab" id="singlePrintTop" style="visibility:hidden;" onclick="window.print();">Print		
-		</ul>		
-		
+			<li class="tab" id="singlePrintTop" style="visibility:hidden;" onclick="window.print();">Print
+		</ul>
+
 		<div id="generate">
 			<span id="generatelabelbitcoinaddress">Generating simpleledger (SLP) Address...</span><br /><br />
 			<span id="generatelabelmovemouse">Move your mouse around to add some extra randomness... </span><span style="display:none;" id="mousemovelimit"></span><br /><br />
@@ -6970,7 +6970,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
   	</div>
 
 		<div id="wallets">
-			<div id="singlearea" class="walletarea">				
+			<div id="singlearea" class="walletarea">
 				<div class="body">
 					<div id="keyarea" class="keyarea">
 						<div class="public">
@@ -7015,7 +7015,7 @@ and entering your simpleledger address.</p>
 				</div>
 			</div>
 
-			
+
 
 			<style>
 			#stepOneSelectStyle {
@@ -7059,13 +7059,13 @@ and entering your simpleledger address.</p>
 			  transition: color 0.5s ease-in-out;
 			}
 			.sc-left {
-				float:left;				
+				float:left;
 			}
 			.sc-right {
 				float:right;
 			}
 			.style-col:hover {
-				opacity: 1;				
+				opacity: 1;
 				background-image: radial-gradient(grey, #0fcb97);
 				color: #000;
 			}
@@ -7086,7 +7086,7 @@ and entering your simpleledger address.</p>
 				position:absolute;
 				border-radius: 3px;
 				border: 3px solid #000;
-				padding: 10px 10px 10px 40px;				
+				padding: 10px 10px 10px 40px;
 				top: 136px;
 				right: 100px;
 				color: #fff;
@@ -7108,7 +7108,7 @@ and entering your simpleledger address.</p>
 			}
 
 			#bikeshedUno {
-				
+
 			}
 			.step-header {
 				background-color: #0fcb97;
@@ -7165,14 +7165,14 @@ and entering your simpleledger address.</p>
 				background:#3d3d3d;
 				color:#fff;
 				padding:5px 10px;
-				border-radius:3px; 
+				border-radius:3px;
 				display:inline-block;
 			}
 			.print-btn:hover {
 				background: #fff;
 				color: #3d3d3d;
 			}
-			
+
 			</style>
 				<div id="stepOneSelectStyle">
 					<div id="bikeshedUno" class="step-header">
@@ -7180,7 +7180,7 @@ and entering your simpleledger address.</p>
 					</div>
 					<div onclick="redesign()" id="bikeshedDos">
 						Step One - Choose Your Design
-					</div>		
+					</div>
 					<div class="style-row">
 						<div onmouseover="toggleSelectedDesign(this)" onclick="toggleSelectedDesign(this)" class="style-col sc-left">
 							<div onclick="designConfirmed(this)" data-wallet-skin="default" class="confirm-design confirm-design-white">
@@ -7190,7 +7190,7 @@ and entering your simpleledger address.</p>
 								SLP-paperwallet default
 							</div>
 							<div class="style-example">
-								<img src="img/2019-paper-wallet-dark-blue.png">
+								<img src="img/bitcoin-com-paper-wallet-template.png">
 							</div>
 						</div>
 						<div onmouseover="toggleSelectedDesign(this)" onclick="toggleSelectedDesign(this)" class="style-col sc-right">
@@ -7201,20 +7201,20 @@ and entering your simpleledger address.</p>
 							Light
 						</div>
 						<div class="style-example">
-							<img src="img/2019-paper-wallet-light.png">
+							<img src="img/paper-wallet-ink-saver.png">
 						</div>
 						</div>
-					</div>										
+					</div>
 					<div class="style-row">
 						<div onmouseover="toggleSelectedDesign(this)" onclick="toggleSelectedDesign(this)" class="style-col sc-left">
 							<div onclick="designConfirmed(this)" data-wallet-skin="nostep" class="confirm-design">
 								Select and Continue
 							</div>
 							<div class="style-label">
-							Gadsden 
+							Gadsden
 							</div>
 							<div class="style-example">
-								<img src="img/2019-paper-wallet-tread.png">
+								<img src="img/style6_diy.png">
 							</div>
 						</div>
 						<div onmouseover="toggleSelectedDesign(this)" onclick="toggleSelectedDesign(this)" class="style-col sc-right">
@@ -7222,7 +7222,7 @@ and entering your simpleledger address.</p>
 								Select and Continue
 							</div>
 							<div class="style-label">
-							"Satoshi" 
+							"Satoshi"
 							</div>
 							<div class="style-example">
 								<img src="img/2019-paper-wallet-satoshi.png">
@@ -7235,7 +7235,7 @@ and entering your simpleledger address.</p>
 								Select and Continue
 							</div>
 							<div class="style-label">
-							Vietnam 
+							Vietnam
 							</div>
 							<div class="style-example">
 								<img src="img/2019-paper-wallet-vietnam.png">
@@ -7251,23 +7251,23 @@ and entering your simpleledger address.</p>
               <div class="style-example">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M430.9 393.4l-119.6-119-58.1-57.9-13.4-13.3c15.9-40.6 7.1-88.2-26.6-121.7-35.4-35.3-88.5-42.3-131-22.9l76.1 75.8-53.1 52.9-77.9-75.8C6.2 153.8 15 206.7 50.4 242c33.6 33.5 81.4 42.3 122.1 26.5l14.4 14.3L81.7 388c-7.6 5.7-7.6 19 1.9 26.6l43.8 43.7c7.6 7.6 19.1 7.6 26.7 0l96.1-112.4 113.4 112.9c7.1 7.1 17.7 7.1 24.8 0l40.7-40.6c8.9-7.1 8.9-19.5 1.8-24.8z"/><path d="M494.4 216.6l-34.5-34.1c-2.2-2.2-5.8-2.2-8 0l-3.7 3.7-18.5-15.8s1.2-10-4.9-18.7c-6.2-8.7-16.1-19.8-23.2-26.9-7.1-7-34.1-33.9-69.7-51.4C296.2 55.7 271 48 241 48v29.7s28.7 16.6 45.1 29.7c16.3 13.1 16.8 59.5 16.8 59.5l-28.5 28.5 56.5 56.1 31-36.3c12.9-3.5 23.8-3.8 30.2-.3l13.7 13.3-9.6 9.5c-2.2 2.2-2.2 5.7 0 7.9l34.5 34.1c2.2 2.2 5.8 2.2 8 0l55.7-55.2c2.1-2.2 2.1-5.8 0-7.9z"/></svg>
               </div>
-            </div>					
+            </div>
 					</div>
 				</div>
-				
+
 				<div id="paperarea">
 					<div class="step-header">
 						Step Two - Customize
-					</div>	
+					</div>
 				<div class="commands">
-					
+
 					<div id="papercommands" class="row">
 						<div class="papersettings">
 						<span style="display:none;"><label id="paperlabelhideart" for="paperart">Hide Art?</label> <input type="checkbox" id="paperart" onchange="ninja.wallets.paperwallet.toggleArt(this);" /></span>
 						<span style="display:none;"><label id="chooseyourwallet" for="paperIMG">Style:</label>
 							<select id="walletSelector" name="paperIMG">
 						    <option value="default">SLP paperwallet</option>
-						    <option value="inksaver">Ink Saver</option>						    
+						    <option value="inksaver">Ink Saver</option>
 						    <option value="windex">BCH Gang</option>
 						    <option value="coloringbook">DIY</option>
 						    <option value="nostep">No Step</option>
@@ -7280,8 +7280,8 @@ and entering your simpleledger address.</p>
 								<option value="any">Any amount</option>
 						    <option value="1">1 SLP token</option>
 						    <option value="10">10 SLP tokens</option>
-						    <option value="25">25 SLP tokens</option>						    
-						    <option value="50">50 SLP tokens</option>						    
+						    <option value="25">25 SLP tokens</option>
+						    <option value="50">50 SLP tokens</option>
 						    <option value="100">100 SLP tokens</option>
 						    <option value="500">500 SLP tokens</option>
 						    <option value="1000">1000 SLP tokens</option>
@@ -7293,20 +7293,20 @@ and entering your simpleledger address.</p>
 						<script>
 							function toggleAdvanced() {
 							    var advancedDisplay = document.getElementById("paperadvancedcommands")
-							    var advancedBtnTitle = document.getElementById("advancedcommandbtn")	
-							    var walletDisplayed = document.getElementById("paperkeyarea")						    
+							    var advancedBtnTitle = document.getElementById("advancedcommandbtn")
+							    var walletDisplayed = document.getElementById("paperkeyarea")
 							    if (advancedDisplay.style.display === "none") {
 							        advancedDisplay.style.display = "block"
 							        advancedBtnTitle.innerHTML = "Hide Advanced Settings"
 							        walletDisplayed.style.display = "none"
 							        // Hide Step 3 Print; show when wallet is generated
 							        document.getElementById('stepThreePrint').style.display="none"
-							        
+
 							    } else {
 							        advancedDisplay.style.display = "none"
-							        advancedBtnTitle.innerHTML = "Advanced Settings"		
-							        walletDisplayed.style.display = "block"				       
-							        
+							        advancedBtnTitle.innerHTML = "Advanced Settings"
+							        walletDisplayed.style.display = "block"
+
 							        // Uncheck the encryption option and regenerate an unencrypted wallet
 							        document.getElementById("paperencrypt").checked = false
 							        // This doesn't disable the passphrase box or encryption though when you reset it with code, so do it manually
@@ -7318,17 +7318,17 @@ and entering your simpleledger address.</p>
 
 							function toggleSelectedDesign(element) {
 								// Hide all confirm buttons
-								var confirmBtns = document.getElementsByClassName('confirm-design')								
+								var confirmBtns = document.getElementsByClassName('confirm-design')
 								for (i = 0; i < confirmBtns.length; i++) {
 								    confirmBtns[i].style.opacity = 0
 								    confirmBtns[i].style.pointerEvents = "none"
 								}
 
 								// Remove selected-design class from all wallets
-								var walletDesigns = document.getElementsByClassName('style-col')								
+								var walletDesigns = document.getElementsByClassName('style-col')
 								for (i = 0; i < walletDesigns.length; i++) {
 								    walletDesigns[i].classList.remove('selected-design')
-								} 
+								}
 								// Add selected-design class to selected wallet
 								element.classList.toggle('selected-design')
 								element.firstElementChild.style.opacity = 1
@@ -7337,7 +7337,7 @@ and entering your simpleledger address.</p>
 
 							function designConfirmed(element) {
 								var design = element.dataset.walletSkin
-								var imgMenu = document.getElementById('walletSelector')		
+								var imgMenu = document.getElementById('walletSelector')
 								imgMenu.options[imgMenu.selectedIndex].value = design
 								ninja.wallets.paperwallet.build(document.getElementById('paperlimit').value * 1, document.getElementById('paperlimitperpage').value * 1, !document.getElementById('paperart').checked, document.getElementById('paperpassphrase').value);
 								var vanishers = document.getElementsByClassName('style-col')
@@ -7360,7 +7360,7 @@ and entering your simpleledger address.</p>
 										}
 								document.getElementById('stepOneSelectStyle').style.height = '929px'
 								document.getElementById('bikeshedUno').style.display = 'block'
-								document.getElementById('bikeshedDos').style.display = 'none'														
+								document.getElementById('bikeshedDos').style.display = 'none'
 
 								// Hide the rest of the interface
 								document.getElementById('paperarea').style.display = "none"
@@ -7370,7 +7370,7 @@ and entering your simpleledger address.</p>
 								document.getElementById('paperkeyarea').style.display = "block"
 								// Show the "step 3 print" button
 								document.getElementById('stepThreePrint').style.display = "block"
-								ninja.wallets.paperwallet.build(document.getElementById('paperlimit').value * 1, document.getElementById('paperlimitperpage').value * 1, !document.getElementById('paperart').checked, document.getElementById('paperpassphrase').value);									
+								ninja.wallets.paperwallet.build(document.getElementById('paperlimit').value * 1, document.getElementById('paperlimitperpage').value * 1, !document.getElementById('paperart').checked, document.getElementById('paperpassphrase').value);
 							}
 
 							function denomChange(denomLabel) {
@@ -7387,38 +7387,38 @@ and entering your simpleledger address.</p>
 									else {
 										denomLabels[i].innerHTML = denomLabel + ' SLP'
 									}
-										    
+
 								}
 							}
 						</script>
 
 
-						<span style="display:none;"><label id="paperlabelBW" for="paperBW">Grayscale?</label> <input type="checkbox" id="paperBW" onchange="ninja.wallets.paperwallet.toggleColor(this);" /></span>						
+						<span style="display:none;"><label id="paperlabelBW" for="paperBW">Grayscale?</label> <input type="checkbox" id="paperBW" onchange="ninja.wallets.paperwallet.toggleColor(this);" /></span>
 					</div>
-					
-						
+
+
 						<span style="display:none;" class="print"><input type="button" name="print" value="Print" id="paperprint" onclick="window.print();" /></span>
 					</div>
-					
+
 				</div>
 				<div id="paperadvancedcommands" style="display: none;" class="row extra">
 					<h2 style="font-size:15px;">Check the BIP38 option, enter a passphrase, and click "Generate" to create an encrypted wallet.</h2>
-						<span><input type="checkbox" id="paperencrypt" onchange="ninja.wallets.paperwallet.toggleEncrypt(this);" /><label id="paperlabelencrypt" for="paperencrypt">BIP38 Encrypt?&nbsp;&nbsp;</label><div class="tooltip">(What's this?)<span class="tooltiptext">Selecting this option allows you to encrypt your wallet with a password you choose. You will not be able to spend from the wallet without this password. The benefit is additional security, but be careful &mdash; there is no way to recover your password if you forget it!</span></div> </span>						
+						<span><input type="checkbox" id="paperencrypt" onchange="ninja.wallets.paperwallet.toggleEncrypt(this);" /><label id="paperlabelencrypt" for="paperencrypt">BIP38 Encrypt?&nbsp;&nbsp;</label><div class="tooltip">(What's this?)<span class="tooltiptext">Selecting this option allows you to encrypt your wallet with a password you choose. You will not be able to spend from the wallet without this password. The benefit is additional security, but be careful &mdash; there is no way to recover your password if you forget it!</span></div> </span>
 						<span><label id="paperlabelBIPpassphrase" for="paperpassphrase">Passphrase:</label> <input type="text" id="paperpassphrase" /></span>
 
-						<div class="generate-button">						
+						<div class="generate-button">
 							<span>
 								<!--<input type="button" id="papergenerate" value="Generate" onclick="ninja.wallets.paperwallet.build(document.getElementById('paperlimit').value * 1, document.getElementById('paperlimitperpage').value * 1, !document.getElementById('paperart').checked, document.getElementById('paperpassphrase').value);" />-->
 								<button id="papergenerate" onclick="generateFromAdvanced()">Generate</button>
 							</span>
 					</div>
-						
-						
+
+
 						<span style="display:none;"><label id="paperlabeladdressesperpage" for="paperlimitperpage">Addresses per page:</label> <input type="text" id="paperlimitperpage" /></span>
 					</div>
 				<div onclick="window.print();" id="stepThreePrint">
-				Step Three - <div class="print-btn">Print</div>	
-				</div>						
+				Step Three - <div class="print-btn">Print</div>
+				</div>
 				<div id="paperkeyarea"></div>
 
 				<div id="singlesafety">
@@ -7430,7 +7430,7 @@ and entering your simpleledger address.</p>
 						<p id="singletip5"><b>Spend your SLP tokens</b> by downloading a Bitcoin Cash (BCH) wallet which is SLP compatible and can sweep paper wallets or import private keys, so you can sweep the full balance of your private key into your account and spend your tokens online. Any unspent portion of SLP tokens from this paper wallet will appear as a remaining balance in your new wallet.</p>
 					</div>
 			</div>
-			
+
 			<div id="bulkarea" class="walletarea">
 				<div class="commands">
 					<div id="bulkcommands" class="row">
@@ -7450,14 +7450,14 @@ and entering your simpleledger address.</p>
 					<textarea rows="20" cols="88" id="bulktextarea"></textarea>
 				</div>
 				<div class="faqs">
-					<div id="bulkfaq1" class="faq"> 
+					<div id="bulkfaq1" class="faq">
 						<div id="bulkq1" class="question" onclick="ninja.wallets.bulkwallet.openCloseFaq(1);">
 							<span id="bulklabelq1">Why should I use a Bulk Wallet to accept bitcoins on my website?</span>
 							<div id="bulke1" class="more"></div>
 						</div>
 						<div id="bulka1" class="answer">The traditional approach to accepting bitcoins on your website requires that you install the official bitcoin client daemon ("bitcoind"). Many website hosting packages don't support installing the bitcoin daemon. Also, running the bitcoin daemon on your web server means your private keys are hosted on the server and could get stolen if your web server is hacked. When using a Bulk Wallet you can upload only the bitcoin addresses and not the private keys to your web server. Then you don't have to worry about your bitcoin wallet being stolen if your web server is hacked. </div>
 					</div>
-					<div id="bulkfaq2" class="faq"> 
+					<div id="bulkfaq2" class="faq">
 						<div id="bulkq2" class="question" onclick="ninja.wallets.bulkwallet.openCloseFaq(2);">
 							<span id="bulklabelq2">How do I use a Bulk Wallet to accept bitcoins on my website?</span>
 							<div id="bulke2" class="more"></div>
@@ -7474,7 +7474,7 @@ and entering your simpleledger address.</p>
 					</div>
 				</div>
 			</div>
-			
+
 			<div id="brainarea" class="walletarea">
 				<div id="braincommands" class="commands">
 					<div class="row">
@@ -7486,7 +7486,7 @@ and entering your simpleledger address.</p>
 					<div class="row extra">
 						<span class="label" id="brainlabelconfirm"><label for="brainpassphraseconfirm">Confirm Passphrase: </label></span>
 						<input tabindex="2" type="password" id="brainpassphraseconfirm" value="" onfocus="this.select();" onkeypress="if (event.keyCode == 13) ninja.wallets.brainwallet.view();" />
-						
+
 						<span id="brainalgorithm" class="notes right">Algorithm: SHA256(passphrase)</span>
 					</div>
 					<div class ="row extra">
@@ -7512,10 +7512,10 @@ and entering your simpleledger address.</p>
 					</div>
 				</div>
 			</div>
-			
+
 			<div id="vanityarea" class="walletarea">
 				<div id="vanitystep1label" class="commands expandable" onclick="ninja.wallets.vanitywallet.openCloseStep(1);">
-					<span><label id="vanitylabelstep1">Step 1 - Generate your "Step1 Key Pair"</label> <input type="button" id="vanitynewkeypair" 
+					<span><label id="vanitylabelstep1">Step 1 - Generate your "Step1 Key Pair"</label> <input type="button" id="vanitynewkeypair"
 						value="Generate" onclick="ninja.wallets.vanitywallet.generateKeyPair();" /></span>
 					<div id="vanitystep1icon" class="more"></div>
 				</div>
@@ -7558,7 +7558,7 @@ and entering your simpleledger address.</p>
 						<span class="output" id="vanityaddress"></span>
 						<br /><div class="notes" id="vanitylabelnotesbitcoinaddress">The above is your new address that should include your required prefix.</div>
 					</div>
-					
+
 					<div>
 						<span class="label" id="vanitylabelpublickeyhex">Vanity Public Key (HEX):</span>
 						<span class="output pubkeyhex" id="vanitypublickeyhex"></span>
@@ -7600,12 +7600,12 @@ and entering your simpleledger address.</p>
 				</div>
 			</div>
 
-			<div id="detailarea" class="walletarea">	
+			<div id="detailarea" class="walletarea">
 				<div id="detailcommands" class="commands">
 					<span><label id="detaillabelenterprivatekey" for="detailprivkey">Enter Private Key</label></span>
 					<input type="text" id="detailprivkey" value="" onfocus="this.select();" onkeypress="if (event.keyCode == 13) ninja.wallets.detailwallet.viewDetails();" />
 					<span><input type="button" class="button" id="detailview" value="View Details" onclick="ninja.wallets.detailwallet.viewDetails();" /></span>
-					
+
 					<div id="detailbip38toggle">
 						<span><label id="detaillabelencrypt" for="detailencrypt">BIP38 Encrypt?</label> <input type="checkbox" id="detailbip38checkbox" onchange="ninja.wallets.detailwallet.toggleEncrypt(this);" /></span>
 					</div>
@@ -7630,7 +7630,7 @@ and entering your simpleledger address.</p>
 							<span class="label" id="detaillabelbitcoinaddress">Bitcoin Address</span>
 							<div id="detailqrcodepublic" class="qrcode_public"></div>
 							<span class="output" id="detailaddress"></span>
-						</div>					
+						</div>
 						<div class="item right">
 							<span class="label" id="detaillabelbitcoinaddresscomp">Bitcoin Address Compressed</span>
 							<div id="detailqrcodepubliccomp" class="qrcode_public"></div>
@@ -7683,7 +7683,7 @@ and entering your simpleledger address.</p>
 					</div>
 				</div>
 				<div class="faqs">
-					<div id="detailfaq1" class="faq"> 
+					<div id="detailfaq1" class="faq">
 						<div id="detailq1" class="question" onclick="ninja.wallets.detailwallet.openCloseFaq(1);">
 							<span id="detaillabelq1">How do I make a wallet using dice? What is B6?</span>
 							<div id="detaile1" class="more"></div>
@@ -7710,7 +7710,7 @@ and entering your simpleledger address.</p>
             <span><a href="?culture=ru" id="cultureru" onclick="ninja.translator.translate('ru'); return false;">Русский</a></span> |
             <span><a href="?culture=pt-br" id="culturept-br" onclick="ninja.translator.translate('pt-br'); return false;">português</a></span>
         </div>
-		</div>				
+		</div>
 
 		</div>
 
@@ -7751,7 +7751,7 @@ and entering your simpleledger address.</p>
 				<div class="tooltip" id="statuskeypoolgood">
 					<span id="statuslabelkeypool1">This is a log of all the Bitcoin Addresses and Private Keys you generated during your current session. Reloading the page will create a new session.</span>
 					<textarea rows="20" cols="91" id="keypooltextarea"></textarea>
-					
+
 					<br /><br />
 					<input type="button" value="Refresh" class="button" id="statuskeypoolrefresh" onclick="ninja.status.showKeyPool();" />
 					<input type="button" value="OK" class="button" id="statusokkeypool" onclick="document.getElementById('statuskeypoolgood').style.display = 'none';" />
@@ -7766,15 +7766,15 @@ and entering your simpleledger address.</p>
 						<span class="statusicon" id="statusunittests" onclick="ninja.status.showUnitTests();">...</span>
 						<span class="statusicon" id="statuskeypool" onclick="ninja.status.showKeyPool();">&#8803;</span>
 					</span>
-					
-					<span class="item" id="footerlabeltranslatedby"></span>					
+
+					<span class="item" id="footerlabeltranslatedby"></span>
 				</div>
 			</div>
 			<div class="authorpgp">
-				
-				
+
+
 			</div>
-		
+
 		</div>
 	</div>
 
@@ -7834,7 +7834,7 @@ ninja.privateKey = {
 			callback(new Error(ninja.translator.get("detailalertnotvalidprivatekey")));
 			return;
 		}
-		// first byte is always 0x01 
+		// first byte is always 0x01
 		else if (hex[0] != 0x01) {
 			callback(new Error(ninja.translator.get("detailalertnotvalidprivatekey")));
 			return;
@@ -7863,7 +7863,7 @@ ninja.privateKey = {
 				return;
 			}
 		}
-		// second byte for EC-multiplied key 
+		// second byte for EC-multiplied key
 		else if (hex[1] == 0x43) {
 			isECMult = true;
 			isCompPoint = (hex[2] & 0x20) != 0;
@@ -8319,7 +8319,7 @@ ninja.publicKey = {
 		},
 
 		// show QRCodes with canvas
-		// parameter: keyValuePair 
+		// parameter: keyValuePair
 		// example: { "id1": "string1", "id2": "string2"}
 		//		"id1" is the id of a div element where you want a QRCode inserted.
 		//		"string1" is the string you want encoded into the QRCode.
@@ -8416,7 +8416,7 @@ ninja.tab = {
                 document.getElementById(wType).className = "tab";
                 ninja.wallets[wType].close();
             }
-            
+
             // don't open tab if entropy still being collected
             // exceptions: brainwallet detailwallet
             if (ninja.seeder.isStillSeeding == false || walletType == "brainwallet" || walletType == "detailwallet") {
@@ -9516,29 +9516,29 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelnowarranty": "Garancia nincs.",
 
 		// status html
-		"statuslabelcryptogood": "&#10004; Helyes!", 
-		"statuslabelcryptogood1": "A böngészője képes kriptográfiai szempontból véletlen kulcsok generálására (a window.crypto.getRandomValues metódus támogatott)", 
-		"statusokcryptogood": "Rendben", 
-		"statuslabelcryptobad": "&times; Ó jaj!", 
+		"statuslabelcryptogood": "&#10004; Helyes!",
+		"statuslabelcryptogood1": "A böngészője képes kriptográfiai szempontból véletlen kulcsok generálására (a window.crypto.getRandomValues metódus támogatott)",
+		"statusokcryptogood": "Rendben",
+		"statuslabelcryptobad": "&times; Ó jaj!",
 		"statuslabelcryptobad1": "Böngészője NEM támogatja a window.crypto.getRandomValues metódust. A metódust támogató, modernebb böngészőt kell használnia, ha növelni szeretné a generált kulcsok biztonsági szintjét!",
-		"statusokcryptobad": "Rendben", 
-		"statuslabelunittestsgood": "&#10004; Helyes!", 
-		"statuslabelunittestsgood1": "Minden szinkron unit-teszt sikeres.", 
-		"statusokunittestsgood": "Rendben", 
-		"statuslabelunittestsbad": "&times; Ó, jaj!", 
-		"statuslabelunittestsbad1": "Néhány szinkron unit-teszt NEM volt sikeres. Jobb, ha egy másik böngészőt használ ehhez a generátorhoz!", 
-		"statusokunittestsbad": "Rendben", 
-		"statuslabelprotocolgood": "&#10004; Helyes!", 
-		"statuslabelprotocolgood1": "Ezt a generátort a helyi gépről futtatja. <br />Tipp: Győzdjön meg róla, hogy nem kapcsolódik a hálózatra: ", 
-		"statusokprotocolgood": "Rendben", 
+		"statusokcryptobad": "Rendben",
+		"statuslabelunittestsgood": "&#10004; Helyes!",
+		"statuslabelunittestsgood1": "Minden szinkron unit-teszt sikeres.",
+		"statusokunittestsgood": "Rendben",
+		"statuslabelunittestsbad": "&times; Ó, jaj!",
+		"statuslabelunittestsbad1": "Néhány szinkron unit-teszt NEM volt sikeres. Jobb, ha egy másik böngészőt használ ehhez a generátorhoz!",
+		"statusokunittestsbad": "Rendben",
+		"statuslabelprotocolgood": "&#10004; Helyes!",
+		"statuslabelprotocolgood1": "Ezt a generátort a helyi gépről futtatja. <br />Tipp: Győzdjön meg róla, hogy nem kapcsolódik a hálózatra: ",
+		"statusokprotocolgood": "Rendben",
 		"statuslabelprotocolbad": "&#9888; Gondolja át!",
-		"statuslabelprotocolbad1": "A jelek szerint élő honlapról futtatja a generátort. Használható tárcák készítéséhez javasoljuk, hogy ", 
-		"statuslabelprotocolbad2": "töltse le", 
-		"statuslabelprotocolbad3": "a GitHub-on található zip állományt és futtassa a generátort offline módban, helyi html állományként.", 
-		"statusokprotocolbad": "Rendben", 
-		"statuslabelkeypool1": "Az ügymenet során készített valamennyi Bitcoin cím és privát kulcs naplója. A lap újratöltésével új ügymenetet indíthat.", 
-		"statuskeypoolrefresh": "Frissítés", 
-		"statusokkeypool": "Rendben", 
+		"statuslabelprotocolbad1": "A jelek szerint élő honlapról futtatja a generátort. Használható tárcák készítéséhez javasoljuk, hogy ",
+		"statuslabelprotocolbad2": "töltse le",
+		"statuslabelprotocolbad3": "a GitHub-on található zip állományt és futtassa a generátort offline módban, helyi html állományként.",
+		"statusokprotocolbad": "Rendben",
+		"statuslabelkeypool1": "Az ügymenet során készített valamennyi Bitcoin cím és privát kulcs naplója. A lap újratöltésével új ügymenetet indíthat.",
+		"statuskeypoolrefresh": "Frissítés",
+		"statusokkeypool": "Rendben",
 
 		// single wallet html
 		"newaddress": "Új cím előállítása",
@@ -9636,7 +9636,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"detaillabelprivmini": "Mini formátumú Privát Kulcs (22, 26 vagy 30 karakter, amely egy 'S'-sel kezdődik):",
 		"detaillabelpassphrase": "BIP38 jelmondat",
 		"detailbip38decryptbutton": "BIP38 dekódolás",
-		"detailbip38encryptbutton": "BIP38 titkosítás", 
+		"detailbip38encryptbutton": "BIP38 titkosítás",
 		"detaillabelq1": "Hogyan lehet dobókockával pénztárcát készíteni? Mit jelent a B6 formátum?",
 		"detaila1": "A Bitcoin pénztárca előállításakor nagyon fontos, hogy a felhasznált véletlen számok valóban véletlenek legyenek. A fizikai véletlen jobb, mint a számítógéppel előállított pszeudo-véletlen. Fizikai véletlen a legegyszerűbben egy dobókockával állítható elő. Ha szeretne egy Bitcoin privát címet előállítani, akkor csupán egy dobókockára van szüksége, mellyel 99-szer kell dobni. Jegyezze fel minden egyes dobása eredményét. Az eredmények feljegyzésekor a következő szabályokat kövesse: 1->1, 2->2, 3->3, 4->4, 5->5, 6->0. Ha így tesz, akkor a privát kulcshoz tartozó véletlen számot B6 formátumban, vagyis 6-os számrendszerben rögzíti. Írja be ezt a 99 karakterből álló 6-os számrendszerbeli privát kulcsot a fenti szövegmezőbe, majd nyomja meg a 'Részletek megjelenítése' gombot. Ekkor megjelenik az a Bitcoin cím, amely ehhez a privát kulcshoz tartozik. Érdemes felírni a WIF formátumú privát kulcsot is, mivel ezt szélesebb körben használják."
 	};
@@ -10030,26 +10030,26 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		// status html
 		"statuslabelcryptogood": "&#10004; Boa!",
 		"statuslabelcryptogood1": "Your browser can generate cryptographically random keys using window.crypto.getRandomValues", //TODO: please translate
-		"statusokcryptogood": "OK", 
-		"statuslabelcryptobad": "&times; Oh não!", 
+		"statusokcryptogood": "OK",
+		"statuslabelcryptobad": "&times; Oh não!",
 		"statuslabelcryptobad1": "Your browser does NOT support window.crypto.getRandomValues. You should use a more modern browser with this generator to increase the security of the keys generated.",
-		"statusokcryptobad": "OK", 
+		"statusokcryptobad": "OK",
 		"statuslabelunittestsgood": "&#10004; Boa!",
 		"statuslabelunittestsgood1": "All synchronous unit tests passed.", //TODO: please translate
 		"statusokunittestsgood": "OK",
-		"statuslabelunittestsbad": "&times; Oh não!", 
+		"statuslabelunittestsbad": "&times; Oh não!",
 		"statuslabelunittestsbad1": "Some synchronous unit tests DID NOT pass. You should find another browser to use with this generator.", //TODO: please translate
-		"statusokunittestsbad": "OK", 
-		"statuslabelprotocolgood": "&#10004; Boa!", 
+		"statusokunittestsbad": "OK",
+		"statuslabelprotocolgood": "&#10004; Boa!",
 		"statuslabelprotocolgood1": "You are running this generator from your local computer. <br />Tip: Double check you are offline by trying ", //TODO: please translate
-		"statusokprotocolgood": "OK", 
-		"statuslabelprotocolbad": "&#9888; Pense duas vezes!", 
+		"statusokprotocolgood": "OK",
+		"statuslabelprotocolbad": "&#9888; Pense duas vezes!",
 		"statuslabelprotocolbad1": "You appear to be running this generator online from a live website. For valuable wallets it is recommended to", //TODO: please translate
-		"statuslabelprotocolbad2": "download", 
+		"statuslabelprotocolbad2": "download",
 		"statuslabelprotocolbad3": "the zip file from GitHub and run this generator offline as a local html file.", //TODO: please translate
-		"statusokprotocolbad": "OK", 
+		"statusokprotocolbad": "OK",
 		"statuslabelkeypool1": "This is a log of all the Bitcoin Addresses and Private Keys you generated during your current session. Reloading the page will create a new session.", //TODO: please translate
-		"statuskeypoolrefresh": "Atualizar", 
+		"statuskeypoolrefresh": "Atualizar",
 		"statusokkeypool": "OK",
 
 		// single wallet html
@@ -10062,8 +10062,8 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"singletip3": "<b>Adicione fundos</b> para essa carteira ao indicar para outras pessoas enviarem bitcoins para o seu endereço Bitcoin.",
 		"singletip4": "<b>Verifique seu saldo</b> visitando os sites blockchain.info ou blockexplorer.com e digitando o seu endereço Bitcoin.",
 		"singletip5": "<b>Gaste seus bitcoins</b> visitando o site blockchain.info e esvaziando completamente o seu saldo de sua chave privada para sua conta no site. Você também pode gastar seus fundos ao baixar um cliente bitcoin p2p popular e importar sua chave privada para a carteira do aplicativo. Tenha em mente que quando você importa uma chave única para um cliente bitcoin p2p e gasta seus fundos, sua chave será agrupada com outras chavfes privadas no aplicativo de carteira. Quando você realizar uma transação o seu troco será enviado para outro endereço bitcoin dentro do seu aplicativo de carteira. Você deve então fazer backup da sua carteira em seu aplicativo e mantê-la em segurança, visto que seus bitcoins remanescentes agora serão armazenados nela. Um conselho do Satoshi Nakamoto é de que uma carteira nunca deve ser apagada.",
-		"singleshare": "COMPARTILHE", 
-		"singlesecret": "SECRETA", 
+		"singleshare": "COMPARTILHE",
+		"singlesecret": "SECRETA",
 
 		// paper wallet html
 		"paperlabelhideart": "Ocultar figura",
@@ -10142,7 +10142,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"detaillabelprivmini": "Chave privada en formato mini (22, 26 ou 30 caracteres, inicia com 'S'):",
 		"detaillabelpassphrase": "Senha BIP38",
 		"detailbip38decryptbutton": "Descriptografar BIP38",
-		"detailbip38encryptbutton": "Criptografar em BIP38", 
+		"detailbip38encryptbutton": "Criptografar em BIP38",
 		"detaillabelq1": "Como eu faço uma carteira usando um dado? O que é o formato B6?",
 		"detaila1": "Uma parte importante ao criar um carteira Bitcoin é se assegurar que os números aleatórios usados para criar a carteira sejam realmente aleatórios. A aleatoriedade física é melhor do que a pseudo-aleatoriedade gerada por computador. A maneira mais fácil de gerar aleatoriedade física é com dados. Para criar um chave privada Bitcoin você precisa de apenas um dado de seis lados, o qual você jogará 99 vezes. A cada jogada, anote o valor do dado. Ao anotar os valores, siga as seguintes regras: 1=1, 2=2, 3=3, 4=4, 5=5, 6=0. Ao fazer isso, você está anotando esse grande número aleatório, sua chave privada, no formato base 6 (B6). Você pode então digitar essa chave privada em base 6 contendo 99 caracteres no campo de texto acima e clicar em Ver Detalhes. Você então verá o endereço Bitcoin associado com sua chave privada. Você deve também anotar sua chave privada no formato WIF, já que ele é mais amplamente utilizado."
 	};
@@ -10496,7 +10496,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 			if (document.getElementById("btcaddress").innerHTML == "") {
 				single.generateNewAddressAndKey();
 			}
-			document.getElementById("singlearea").style.display = "block";						
+			document.getElementById("singlearea").style.display = "block";
 		},
 
 		close: function () {
@@ -10510,28 +10510,28 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 				key.setCompressed(true);
 				var bitcoinAddress = key.getBitcoinAddress();
 
-				// BEGIN CASH ADDRESS FORMAT IMPLEMENTATION FOR SINGLE WALLET               
-                
+				// BEGIN CASH ADDRESS FORMAT IMPLEMENTATION FOR SINGLE WALLET
+
         // Convert legacy format bitcoinAddress to cashAddress format including bitcoincash: prefix
 				var cashbitcoinAddress = bchaddr.toCashAddress(bitcoinAddress);
-				
+
 				// Convert cashAddress format to slpAddress format (added)
 				cashbitcoinAddress = slpjs.Utils.toSlpAddress(cashbitCoinAddress);
-        
-        // Remove "bitcoincash:" prefix                
+
+        // Remove "bitcoincash:" prefix
         cashbitcoinAddress = cashbitcoinAddress.slice(13);
-        
+
         // Re-assign cash address
         bitcoinAddress = cashbitcoinAddress;
-        
+
         // END CASH ADDRESS FORMAT IMPLEMENTATION FOR SINGLE WALLET
 
 				var privateKeyWif = key.getBitcoinWalletImportFormat();
 				document.getElementById("btcaddress").innerHTML = bitcoinAddress;
-				document.getElementById("btcprivwif").innerHTML ="slp:" + privateKeyWif;
+				document.getElementById("btcprivwif").innerHTML =privateKeyWif;
 				var keyValuePair = {
 					"qrcode_public": bitcoinAddress,
-					"qrcode_private": "slp:" +privateKeyWif
+					"qrcode_private": privateKeyWif
 				};
 				qrCode.showQrCode(keyValuePair, 4);
 			}
@@ -10554,9 +10554,9 @@ ninja.wallets.paperwallet = {
     },
 
 	open: function () {
-		document.getElementById("main").setAttribute("class", "paper"); // add 'paper' class to main div		
+		document.getElementById("main").setAttribute("class", "paper"); // add 'paper' class to main div
 		var paperArea = document.getElementById("paperarea");
-		paperArea.style.display = "block";		
+		paperArea.style.display = "block";
 		var perPageLimitElement = document.getElementById("paperlimitperpage");
 		var limitElement = document.getElementById("paperlimit");
 		var pageBreakAt = (ninja.wallets.paperwallet.useArtisticWallet) ? ninja.wallets.paperwallet.pageBreakAtArtisticDefault : ninja.wallets.paperwallet.pageBreakAtDefault;
@@ -10656,13 +10656,13 @@ ninja.wallets.paperwallet = {
 				Bitcoin.KeyPool.push(new Bitcoin.Bip38Key(address, encryptedKey));
 				if (ninja.wallets.paperwallet.useArtisticWallet) {
 
-					// BEGIN CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET                    
+					// BEGIN CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
           // Convert legacy format 'address' to cashAddress format including prefix
           address = bchaddr.toCashAddress(address);
-          
+
 					// Convert cashAddress format to slpAddress format (added)
 					address = slpjs.Utils.toSlpAddress(address);
-        
+
           // Remove "bitcoincash:" prefix
           address = address.slice(13);
           // END CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
@@ -10673,11 +10673,11 @@ ninja.wallets.paperwallet = {
 
 					// BEGIN CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
           // Convert legacy format 'address' to cashAddress format including prefix
-          address = bchaddr.toCashAddress(address);    
-          
+          address = bchaddr.toCashAddress(address);
+
 					// Convert cashAddress format to slpAddress format (added)
 					address = slpjs.Utils.toSlpAddress(address);
-        
+
           // Remove "bitcoincash:" prefix
           address = address.slice(13)
           // END CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
@@ -10696,10 +10696,10 @@ ninja.wallets.paperwallet = {
 				// BEGIN CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
 				// CashAddr Implementation
         bitcoinAddress = bchaddr.toCashAddress(bitcoinAddress);
-        
+
 				// Convert cashAddress format to slpAddress format (added)
 				bitcoinAddress = slpjs.Utils.toSlpAddress(bitcoinAddress);
-        
+
         // Remove "bitcoincash:" prefix
         bitcoinAddress = bitcoinAddress.slice(13);
         // END CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
@@ -10711,10 +10711,10 @@ ninja.wallets.paperwallet = {
 				// BEGIN CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
 				// CashAddr Implementation
         bitcoinAddress = bchaddr.toCashAddress(bitcoinAddress);
-        
+
 				// Convert cashAddress format to slpAddress format (added)
 				bitcoinAddress = slpjs.Utils.toSlpAddress(bitcoinAddress);
-        
+
         // Remove "bitcoincash:" prefix
         bitcoinAddress = bitcoinAddress.slice(13);
         // END CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
@@ -10749,11 +10749,11 @@ ninja.wallets.paperwallet = {
 	},
 
 	showWallet: function (idPostFix, bitcoinAddress, privateKey) {
-		document.getElementById("btcaddress" + idPostFix).innerHTML = bitcoinAddress;
-		document.getElementById("btcprivwif" + idPostFix).innerHTML ="slp:" + privateKey;
+		document.getElementById("btcaddress" + idPostFix).innerHTML = "simpleledger:"+bitcoinAddress;
+		document.getElementById("btcprivwif" + idPostFix).innerHTML =privateKey;
 		var keyValuePair = {};
 		keyValuePair["qrcode_public" + idPostFix] = bitcoinAddress;
-		keyValuePair["qrcode_private" + idPostFix] ="slp:" + privateKey;
+		keyValuePair["qrcode_private" + idPostFix] =privateKey;
 		ninja.qrCode.showQrCode(keyValuePair);
 		document.getElementById("keyarea" + idPostFix).style.display = "block";
 	},
@@ -10761,7 +10761,7 @@ ninja.wallets.paperwallet = {
 	templateArtisticHtml: function (i) {
 		var keyelement = 'btcprivwif';
 		var image;
-		var imgMenu = document.getElementById('walletSelector')		
+		var imgMenu = document.getElementById('walletSelector')
 		var walletIMG = imgMenu.options[imgMenu.selectedIndex].value;
 		var denomMenu = document.getElementById('denomSelector');
 		var denomMenuBCH = denomMenu.options[denomMenu.selectedIndex].value;
@@ -10780,61 +10780,61 @@ ninja.wallets.paperwallet = {
     	// Font color of cash address to black for b&w version
       addressColor='#000000;'
       lockArtColor='#8a8a8a;'
-      lockArtBgColor='#fff;'  
+      lockArtBgColor='#fff;'
       break;
 
     case 'default':
-      //file resource version: 
-      image = 'img/2019-paper-wallet-dark-blue.png';
+      //file resource version:
+      image = 'img/bitcoin-com-paper-wallet-template.png';
       //base64 encoded version:
       break;
 
     case 'inksaver':
       //file resource version
-      image = 'img/2019-paper-wallet-light.png'
+      image = 'img/paper-wallet-ink-saver.png'
       //base64 encoded version:
       // Font color of cash address to black for b&w version
       addressColor='#111724;'
       lockArtColor='#0fcb97;'
-      lockArtBgColor='#fff;'  
+      lockArtBgColor='#fff;'
       break;
 
     case 'coloringbook':
       //file resource version:
-      image = 'img/blank.png'     
-      
+      image = 'img/blank.png'
+
       // Font color of cash address to black for b&w version
       addressColor='#000000;'
       lockArtColor='#000000;'
-      lockArtBgColor='#fff;' 
+      lockArtBgColor='#fff;'
       break;
 
     case 'pro':
       //file resource version:
       image = 'img/paper-wallet-pro.png'
-      
+
       // Font color of cash address to black for b&w version
       addressColor='#ffffff;'
       lockArtColor='#7d7d7d;'
-      lockArtBgColor='#000000;' 
+      lockArtBgColor='#000000;'
       break;
 
     case 'windex':
       //file resource version
-      image = 'img/paper-wallet-lil-windex.png';      
+      image = 'img/paper-wallet-lil-windex.png';
       // Font color of cash address to black for b&w version
       addressColor='#f9009e;'
       lockArtColor='#00fa0c;'
-      lockArtBgColor='#f9009e;' 
+      lockArtBgColor='#f9009e;'
       break;
 
     case 'nostep':
       //file resource version
-      image = 'img/2019-paper-wallet-tread.png';
+      image = 'img/style6_diy.png';
       // Font color of cash address to gadsden
       //addressColor='#f9009e;'
       lockArtColor='#fff;'
-      //lockArtBgColor='#f9009e;' 
+      //lockArtBgColor='#f9009e;'
       break;
 
     case 'dorian':
@@ -10843,7 +10843,7 @@ ninja.wallets.paperwallet = {
       // Font color of cash address to gadsden
       //addressColor='#f9009e;'
       lockArtColor='#fff;'
-      //lockArtBgColor='#f9009e;' 
+      //lockArtBgColor='#f9009e;'
       break;
 
     case 'vietnam':
@@ -10852,13 +10852,13 @@ ninja.wallets.paperwallet = {
       // Font color of cash address to gadsden
       addressColor='#fff;'
       lockArtColor='#fff;'
-      lockArtBgColor='#5fa368;' 
+      lockArtBgColor='#5fa368;'
       break;
 
-    default: 
+    default:
 	    //file resource version:
 	    image = '2019-paper-wallet-dark-blue.png'
-	    // Base64 encoded version: 
+	    // Base64 encoded version:
     }
 
 
@@ -10891,14 +10891,14 @@ ninja.wallets.paperwallet = {
 			  break;
 			default:
 			  denomBCH = ''
-			}	
+			}
 
     // Code and CSS for Bip38 Encrypted wallet
 		if (ninja.wallets.paperwallet.encrypt) {
 			    keyelement = 'btcencryptedkey'
 			    // Display Bip38 msg
           encryptedDisplay = 'inherit;'
-			  } 
+			  }
 
 		/*
 		if (ninja.wallets.paperwallet.encrypt) {
@@ -10925,7 +10925,7 @@ ninja.wallets.paperwallet = {
 								//"<div style='color:"+ addressColor +"' class='btcaddress' id='btcaddress" + i + "'></div>" +
 								// Use SVG instead of DIV to prevent browser printing White colors as Grey or Black by default
 								"<svg height='42' width='392' style='fill:" + addressColor + "' class='btcaddress'><text x='0' y='15' font-size='16px' id='btcaddress" + i + "' fill='" + addressColor + "'></text></svg>" +
-								
+
 								//"<div class='" + keyelement + "' id='" + keyelement + i + "'></div>" +
 								"<svg height='42' width='392' style='fill:" + addressColor + "' class='" + keyelement + "'><text id='" + keyelement + i + "' x='0' y='15' font-size='10px' fill='" + addressColor + "'></text></svg>" +
 
@@ -10947,19 +10947,19 @@ ninja.wallets.paperwallet = {
 	showArtisticWallet: function (idPostFix, bitcoinAddress, privateKey) {
 		var keyValuePair = {};
 		keyValuePair["qrcode_public" + idPostFix] = bitcoinAddress;
-		keyValuePair["qrcode_private" + idPostFix] ="slp:" + privateKey;
+		keyValuePair["qrcode_private" + idPostFix] =privateKey;
 		ninja.qrCode.showQrCode(keyValuePair, 2.5);
 		document.getElementById("btcaddress" + idPostFix).innerHTML = bitcoinAddress;
 
-		if (ninja.wallets.paperwallet.encrypt) {			
+		if (ninja.wallets.paperwallet.encrypt) {
 			// Since you don't need the shorter length key, you don't need this conditional section
 			// One reason to keep it would be different CSS for encrypted keys, or labeling them ENCRYPTED
 			//var half = privateKey.length / 2;
 			//document.getElementById("btcencryptedkey" + idPostFix).innerHTML = privateKey; //.slice(0, half) + '<br />' + privateKey.slice(half); Don't need this on 2 lines with new wallet design
-			document.getElementById("btcencryptedkey" + idPostFix).innerHTML ="slp:" + privateKey;
+			document.getElementById("btcencryptedkey" + idPostFix).innerHTML = privateKey;
 		}
 		else {
-			document.getElementById("btcprivwif" + idPostFix).innerHTML ="slp:" + privateKey;
+			document.getElementById("btcprivwif" + idPostFix).innerHTML = privateKey;
 		}
 
 		// CODE to modify SVG DOM elements
@@ -10994,7 +10994,7 @@ ninja.wallets.paperwallet = {
 		else {
 			genEncBtn.style.display = 'none'
 		}
-	},	
+	},
 
 	resetLimits: function () {
 		var hideArt = document.getElementById("paperart");
@@ -11093,7 +11093,7 @@ ninja.wallets.paperwallet = {
 
 						// release thread to browser to render UI
 						setTimeout(bulk.batchCSV, 0);
-						
+
 					});
 				}
 				else {
@@ -11102,8 +11102,8 @@ ninja.wallets.paperwallet = {
 					bulk.csv.push((bulk.csvRowLimit - bulk.csvRowsRemaining + bulk.csvStartIndex)
 										+ ",\"" + key.getBitcoinAddress() + "\",\"" + key.toString("wif")
 										//+	"\",\"" + key.toString("wifcomp")    // uncomment these lines to add different private key formats to the CSV
-										//+ "\",\"" + key.getBitcoinHexFormat() 
-										//+ "\",\"" + key.toString("base64") 
+										//+ "\",\"" + key.getBitcoinHexFormat()
+										//+ "\",\"" + key.toString("base64")
 										+ "\"");
 					document.getElementById("bulktextarea").value = translator.get("bulkgeneratingaddresses") + bulk.csvRowsRemaining;
 
@@ -11269,7 +11269,7 @@ ninja.wallets.vanitywallet = {
 				privateKeyWif = ninja.translator.get("vanityprivatekeyonlyavailable");
 				var pubKeyHex = (ninja.publicKey.isPublicKeyHexFormat(input1KeyString)) ? input1KeyString : input2KeyString;
 				var ecKey = (ninja.privateKey.isPrivateKey(input1KeyString)) ? new Bitcoin.ECKey(input1KeyString) : new Bitcoin.ECKey(input2KeyString);
-				// add 
+				// add
 				if (document.getElementById("vanityradioadd").checked) {
 					var pubKeyCombined = ninja.publicKey.getByteArrayFromAdding(pubKeyHex, ecKey.getPubKeyHex());
 				}
@@ -11413,7 +11413,7 @@ ninja.wallets.vanitywallet = {
 			document.getElementById("detailbip38toggle").style.display = "none";
 			var passphrase = document.getElementById("detailprivkeypassphrase").value.toString()
 			if (passphrase == "") {
-				alert(translator.get("bip38alertpassphraserequired"));							
+				alert(translator.get("bip38alertpassphraserequired"));
 				return;
 			}
 			document.getElementById("busyblock").className = "busy";
@@ -11507,7 +11507,7 @@ ninja.wallets.vanitywallet = {
 				document.getElementById("detailprivwif").innerHTML = wif;
 				btcKey.setCompressed(true);
 				var bitcoinAddressComp = btcKey.getBitcoinAddress();
-				var wifComp = btcKey.getBitcoinWalletImportFormat();			
+				var wifComp = btcKey.getBitcoinWalletImportFormat();
 				document.getElementById("detailpubkeycomp").innerHTML = btcKey.getPubKeyHex();
 				document.getElementById("detailaddresscomp").innerHTML = bitcoinAddressComp;
 				document.getElementById("detailprivwifcomp").innerHTML = wifComp;
@@ -12228,10 +12228,10 @@ ninja.wallets.splitwallet = {
 			//   1 share in a safety deposit box ("Box")
 			//   1 share at Home
 			//   1 share at Work
-			// Threshold of 2 can be redeemed in these permutations 
-			//   Home + Box 
-			//   Work + Box 
-			//   Home + Work 
+			// Threshold of 2 can be redeemed in these permutations
+			//   Home + Box
+			//   Work + Box
+			//   Home + Work
 			testSplitAndCombinePrivateKey2of3: function () {
 				// lowercase hex key
 				var key = "0004d30da67214fa65a41a6493576944c7ea86713b14db437446c7a8df8e13da"; //5HpJ4bpHFEMWYwCidjtZHwM2rsMh4PRfmZKV8Y21i7msiUkQKUW
@@ -12275,7 +12275,7 @@ ninja.wallets.splitwallet = {
 			//   3 shares with good friend Angie
 			//   3 shares with good friend Fred
 			//   3 shares with Self at home or office
-			// Threshold of 7 can be redeemed in these permutations 
+			// Threshold of 7 can be redeemed in these permutations
 			//   Self + Box (no trust to spend your coins but your friends are backing up your shares)
 			//   Angie + Box (Angie will send btc to executor of your will)
 			//   Fred + Box (if Angie hasn't already then Fred will send btc to executor of your will)
@@ -12299,7 +12299,7 @@ ninja.wallets.splitwallet = {
 			testCombinePrivateKeyFromXofYShares: function () {
 				var key = "5K9nHKqbwc1xXpa6wV5p3AaCnubvxQDBukKaFkq7ThAkxgMTMEh";
 				// these are 4 of 6 shares
-				var shares = ["3XxjMASmrkk6eXMM9kAJA7qiqViNVBfiwA1GQDLvg4PVScL", "3Y2DkcPuNX8VKZwpnDdxw55wJtcnCvv2nALqe8nBLViHvck", 
+				var shares = ["3XxjMASmrkk6eXMM9kAJA7qiqViNVBfiwA1GQDLvg4PVScL", "3Y2DkcPuNX8VKZwpnDdxw55wJtcnCvv2nALqe8nBLViHvck",
 					"3Y6qv7kyGwgRBKVHVbUNtzmLYAZWQtTPztPwR8wc7uf4MXR", "3YD4TowZn6jw5ss8U89vrcPHonFW4vSs9VKq8MupV5kevG4"]
 				secrets.setRNG();
 				secrets.init(7);
@@ -12321,7 +12321,7 @@ ninja.wallets.splitwallet = {
 				var btcKeyUncompressed = new Bitcoin.ECKey(keyUncompressed);
 				var btcKeyCompressed = new Bitcoin.ECKey(keyCompressed);
 				var pool = Bitcoin.KeyPool.getArray();
-				
+
 				if (pool.length != 2
 					|| pool[0].getBitcoinWalletImportFormat() != keyUncompressed
 					|| pool[1].getBitcoinWalletImportFormat() != keyCompressed
@@ -12342,7 +12342,7 @@ ninja.wallets.splitwallet = {
 				var btcKeyUncompressed2 = new Bitcoin.ECKey(keyUncompressed);
 				var btcKeyHex = new Bitcoin.ECKey(keyHex);
 				var pool = Bitcoin.KeyPool.getArray();
-				
+
 				if (pool.length != 2
 					|| pool[0].getBitcoinWalletImportFormat() != keyUncompressed
 					|| pool[1].getBitcoinWalletImportFormat() != keyCompressed
@@ -12448,7 +12448,7 @@ ninja.wallets.splitwallet = {
 				var a = new BigInteger('12345', 16);
 				var b = new BigInteger('1000000000000', 16);
 				if (b.subtract(a).toString(16) != 'fffffffedcbb') return false;
-				
+
 				return true;
 			},
 			testBigIntegerShouldMultiplyNumbers: function () {
@@ -12492,7 +12492,7 @@ ninja.wallets.splitwallet = {
 				var p = new BigInteger('ffffffff00000001000000000000000000000000ffffffffffffffffffffffff', 16);
 				var a = new BigInteger('fffffffe00000003fffffffd0000000200000001fffffffe00000002ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff', 16);
 				if (a.divide(p).toString(16) != 'ffffffff00000002000000000000000000000001000000000000000000000001') return false;
-				
+
 				return true;
 			},
 			testBigIntegerShouldModNumbers: function () {
@@ -12509,20 +12509,20 @@ ninja.wallets.splitwallet = {
 				var p = new BigInteger('ffffffff00000001000000000000000000000000ffffffffffffffffffffffff', 16);
 				var a = new BigInteger('fffffffe00000003fffffffd0000000200000001fffffffe00000002ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff', 16);
 				if (a.mod(p).toString(16) != '0') return false;
-				
+
 				return true;
 			},
 			testBigIntegerShouldShiftLeftNumbers: function () {
 				if (new BigInteger('69527932928').shiftLeft(13).toString(16) != '2060602000000') return false;
 				if (new BigInteger('69527932928').shiftLeft(45).toString(16) != '206060200000000000000') return false;
-				
+
 				return true;
 			},
 			testBigIntegerShouldShiftRightNumbers: function () {
 				if (new BigInteger('69527932928').shiftRight(13).toString(16) != '818180') return false;
 				if (new BigInteger('69527932928').shiftRight(17).toString(16) != '81818') return false;
 				if (new BigInteger('69527932928').shiftRight(256).toString(16) != '0') return false;
-				
+
 				return true;
 			},
 			testBigIntegerShouldModInverseNumbers: function () {
@@ -12535,7 +12535,7 @@ ninja.wallets.splitwallet = {
 				var a = new BigInteger('deadbeef', 16);
 				var b = a.modInverse(p192);
 				if (a.multiply(b).mod(p192).toString(16) != '1') return false;
-				
+
 				return true;
 			},
 			testBigIntegerShouldThrowOnModInverseOfZero: function () {
@@ -12555,7 +12555,7 @@ ninja.wallets.splitwallet = {
 				var p = new BigInteger('fffffffffffffffffffffffffffffffffffffffffffffffffffffffefffffc2f', 16);
 				var zInv = z.modInverse(p);
 				if (zInv.signum() !== 1) return false; //zInv should be positive
-				
+
 				return true;
 			},
 			testECKeyDoesntHangWithSpecificKey: function () {
@@ -12568,7 +12568,7 @@ ninja.wallets.splitwallet = {
 				return true;
 			},
 
-			// test checksum exceptions 
+			// test checksum exceptions
 			testUncompressedWifShouldFailChecksum: function () {
 				// original key: 5KjQAHniFiy18SU7eenyJ9EPYUkjrbiBPfDqw987QjT5vehVQZV   K->k
 				var key = "5kjQAHniFiy18SU7eenyJ9EPYUkjrbiBPfDqw987QjT5vehVQZV";
@@ -12589,12 +12589,12 @@ ninja.wallets.splitwallet = {
 				return true;
 
 			},
-			// test range of valid private key values for the secp256k1 curve, when specified in hex is 
+			// test range of valid private key values for the secp256k1 curve, when specified in hex is
 			// [0x1, 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140]
 			testBigIntegerZeroShouldSetError: function () {
 				var key = "0000000000000000000000000000000000000000000000000000000000000000";
 				var btcKey = new Bitcoin.ECKey(key);
-				if (btcKey.error == null) { 
+				if (btcKey.error == null) {
 					return false;
 				}
 				return true;
@@ -12804,20 +12804,20 @@ if (ninja.getQueryString()["testnet"] == "true" || ninja.getQueryString()["testn
 if (ninja.getQueryString()["showseedpool"] == "true" || ninja.getQueryString()["showseedpool"] == "1") {
 	document.getElementById("seedpoolarea").style.display = "block";
 }
-	</script>	
+	</script>
 
 <div class="section-1">
-  <div class="container">     
+  <div class="container">
     <div class="row">
       <div class="col-md-12" style="text-align: center;">
-        
+
 <br><br><br>
 <hr size=1>
       <font size=2><font color="green">Proudly created by <strong><a href="https://www.bitchslap.tech/">Team BitCHSLaP</a></strong> for the inaugural <strong><a href="https://slp.dev/">2019 SLP Virtual Hackathon</a></strong><br>utilizing open source code from slpjs, paperwallet.bitcoin.com and bitaddress.org V3.3.0<br>
 JavaScript copyrights included in source.</font></font>
 
 
-     
+
       </div>
     </div>
   </div>
